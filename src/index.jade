@@ -55,7 +55,7 @@ html
 
       section
         ul
-          li <i>Web master/web manager</i> : orang yang bertugas menjaga halaman web
+          li <i>Web master/web manager</i> : orang yang bertugas menjaga halaman Web
           li <i>Surfer</i> : orang yang menjelajahi web
           li <i>Hyperlink/Link</i> : tulisan atau gambar yang jika diklik akan menampilkan halaman web lainnya
           li <i>Hypertext</i> : teks dalam dokumen yang saling terhubung dengan teks lain dalam cara yang nonlinear
@@ -113,8 +113,52 @@ html
           <li style="font-size:14px"> Browser HTML menginterpretasikan <i>carriage return</i>(enter) dan indentasi(tab) sebagai sebuah spasi
           <li style="font-size:14px"> Ada beberapa karakter khusus yang dapat dipresentasikan dengan kode tertentu. Hal ini akan dibahas pada entitas karakter.
 
-        h2 Cara Kerja WWW
+      section
+        h3 Komentar pada HTML
+          hr
+          <li style="font-size:14px">Berfungsi untuk memberi komentar atau catatan terhadap dokumen itu tersendiri
+          <li style="font-size:14px">Mempermudah pembacaan kembali kode-kode HTML
+          <li style="font-size:14px">Isi dari tag comment tidak ditampilkan oleh web browser
+          <li style="font-size:14px">Menggunakan tanda khusus agar komentar tidak dapat dibaca pada browser
+          <li style="font-size:14px">Tag yang digunakan menandai bagian komentar adalah:<!--dan diakhiri dengan-->
 
+      section
+        h3 Entitas Karakter
+          hr
+          <li style="font-size:14px">Beberapa karakter di dalam dokumen HTML merupakan reserved word HTML
+          <li style="font-size:14px">Misalnya tidak boleh mengetikan tanda "<" atau ">" dalam teks editor karena browser akan menganggapnya sebagai tag
+          hr
+          ul terdiri dari 3 bagian :
+            <li style="font-size:14px">Ampersand (&)
+            <li style="font-size:14px">Nama Entitas, atau simbol # diikuti nomor entitas
+            <li style="font-size:14px">Simbol titik koma(;)
+          <li style="font-size:14px">Bersifat case sensitive
+
+      section
+        h3 Dasar CSS
+          hr
+          li Cascading Style Sheets
+          ul Kelebihan CSS :
+            <li style="font-size:14px">Menyederhanakan perancangan halaman web
+            <li style="font-size:14px">Memudahkan pemeliharaan halaman web
+            l<li style="font-size:14px">Memperkecil ukuran file HTML(jika CSS dikerjakan dalm file terpisah)
+          ul Kekurangan CSS :
+            <li style="font-size:14px">Halaman WEB mungkin tidak ditampilkan dengan benar pada browser,sesuai Spesifikasi CSS
+            
+      section
+        h3 Rule
+          hr
+          <li style="font-size:14px">Selector-> Elemen atau tag HTML normal yang ingin didefinisikan.
+          <li style="font-size:14px">Property-> Atribut yang ingin dipilih,dimana masing-masing 
+          p <b>Property</b> dapat diberikan nilai(<b>value</b>)
+          <li style="font-size:14px">Penulisan antara <b>Property</b> dan <b>value</b> dipisahakan oleh tanda titik dua(:) dan dibuka dengna tanda "{" dan ditutup dengan tanda "}"
+        ul Komentara Pada CSS
+          hr
+          <li style="font-size:14px">Dimulai dengan tanda /*
+          <li style="font-size:14px">Diakhiri dengan tanda */
+
+
+      h2 Cara Kerja WWW
       section
         ul
           li <p style="text-align:center">Informasi <i>web</i> disimpan dalam dokumen yang dinamakan <i>web page</i></p>
@@ -122,6 +166,7 @@ html
           li <p style="text-align:center"><i>User</i> menampilkan <i>web page</i> dengan menggunakan <i>web browser</i></p>
           li <p style="text-align:center"><i>Web browser</i> meminta <i>web page</i> kepada <i>web server</i> dengan mengirim <i>request</i> alamat dari <i>web page</i> tersebut, misalnya <u>http://www.yahoo.com</u></p>
           li <p style="text-align:center">Pada saat <i>web browser</i> menerima <i>web page</i> dari <i>web server</i>, isi <i>web page</i> akan diterjemahkan dan ditampilkan ke layar oleh <i>web browser</i></p>
+
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
