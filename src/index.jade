@@ -123,8 +123,7 @@ html
               li <p style="font-size:14px">Digunakan untuk menguraikan berbagai meta data(informasi yang berkaitan dengan dokumen), judul dokumen,dan tautan dokumen ke berkas-berkas eksternal
               
       section
-
-        h3 Struktur Dokumen HTML
+        h2 Struktur Dokumen HTML
           hr
           ul 
               li <p style="font-size:14px">Berbagai data yang ada di dalam elemen head tidak terlihat pada halaman web(tampilan browser)
@@ -142,6 +141,33 @@ html
           <li style="font-size:14px"> Browser HTML menginterpretasikan satu atau beberapa spasi yang berdekatan sebagai sebuah spasi tunggal
           <li style="font-size:14px"> Browser HTML menginterpretasikan <i>carriage return</i>(enter) dan indentasi(tab) sebagai sebuah spasi
           <li style="font-size:14px"> Ada beberapa karakter khusus yang dapat dipresentasikan dengan kode tertentu. Hal ini akan dibahas pada entitas karakter.
+
+      section
+
+        h2 Layout
+        hr
+        ul
+          li Layout berbicara mengenai bagaimana penataan elemen-elemen dalam sebuah halaman dengan benar. Pada bagian ini, kita hanya akan membahas elemen-elemen layout yang umumnya ditemukan pada dokumen web, dan bagaimana membuat elemen-elemen tersebut dengan <b>HTML</b> dan <b>CSS</b>.
+        ul
+
+      section
+        hr
+        ul
+        <p style="text-align:center"> Sebuah dokumen web umumnya memiliki 5 elemen sebagai berikut:
+        li Header
+        li Navigation
+        li Sidebar
+        li Content
+        li Footer
+
+      section
+        ul
+          li Header = elemen yang biasanya berisi judul, logo website, maupun nama website.
+          li Navigation = memberikan akses navigasi ke halaman-halaman lain dalam website.
+          li Sidebar = dapat berupa iklan/menu tambahan, sidebar dapat terletak di kiri, kanan ataupun pada keduanya.
+          li Content = Isi utama dari suatu website.
+          li Footer = Bagian penutup dari website, dapat berupa lisensi pengunaan, <em>sitemap</em>, ataupun link ke website lain.
+
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
