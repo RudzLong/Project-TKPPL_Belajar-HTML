@@ -55,7 +55,7 @@ html
 
       section
         ul
-          li <i>Web master/web manager</i> : orang yang bertugas menjaga halaman web
+          li <i>Web master/web manager</i> : orang yang bertugas menjaga halaman Web
           li <i>Surfer</i> : orang yang menjelajahi web
           li <i>Hyperlink/Link</i> : tulisan atau gambar yang jika diklik akan menampilkan halaman web lainnya
           li <i>Hypertext</i> : teks dalam dokumen yang saling terhubung dengan teks lain dalam cara yang nonlinear
@@ -143,8 +143,62 @@ html
           <li style="font-size:14px"> Ada beberapa karakter khusus yang dapat dipresentasikan dengan kode tertentu. Hal ini akan dibahas pada entitas karakter.
 
       section
+        h3 Komentar pada HTML
+          hr
+          <li style="font-size:14px">Berfungsi untuk memberi komentar atau catatan terhadap dokumen itu tersendiri
+          <li style="font-size:14px">Mempermudah pembacaan kembali kode-kode HTML
+          <li style="font-size:14px">Isi dari tag comment tidak ditampilkan oleh web browser
+          <li style="font-size:14px">Menggunakan tanda khusus agar komentar tidak dapat dibaca pada browser
+          <li style="font-size:14px">Tag yang digunakan menandai bagian komentar adalah:<!--dan diakhiri dengan-->
 
+      section
+        h3 Entitas Karakter
+          hr
+          <li style="font-size:14px">Beberapa karakter di dalam dokumen HTML merupakan reserved word HTML
+          <li style="font-size:14px">Misalnya tidak boleh mengetikan tanda "<" atau ">" dalam teks editor karena browser akan menganggapnya sebagai tag
+          hr
+          ul terdiri dari 3 bagian :
+            <li style="font-size:14px">Ampersand (&)
+            <li style="font-size:14px">Nama Entitas, atau simbol # diikuti nomor entitas
+            <li style="font-size:14px">Simbol titik koma(;)
+          <li style="font-size:14px">Bersifat case sensitive
+
+      section
+        h3 Dasar CSS
+          hr
+          li Cascading Style Sheets
+          ul Kelebihan CSS :
+            <li style="font-size:14px">Menyederhanakan perancangan halaman web
+            <li style="font-size:14px">Memudahkan pemeliharaan halaman web
+            l<li style="font-size:14px">Memperkecil ukuran file HTML(jika CSS dikerjakan dalm file terpisah)
+          ul Kekurangan CSS :
+            <li style="font-size:14px">Halaman WEB mungkin tidak ditampilkan dengan benar pada browser,sesuai Spesifikasi CSS
+            
+      section
+        h3 Rule
+          hr
+          <li style="font-size:14px">Selector-> Elemen atau tag HTML normal yang ingin didefinisikan.
+          <li style="font-size:14px">Property-> Atribut yang ingin dipilih,dimana masing-masing 
+          p <b>Property</b> dapat diberikan nilai(<b>value</b>)
+          <li style="font-size:14px">Penulisan antara <b>Property</b> dan <b>value</b> dipisahakan oleh tanda titik dua(:) dan dibuka dengna tanda "{" dan ditutup dengan tanda "}"
+        ul Komentara Pada CSS
+          hr
+          <li style="font-size:14px">Dimulai dengan tanda /*
+          <li style="font-size:14px">Diakhiri dengan tanda */
+
+      section
+        h1 Hyperlink
+          
+      section
+        ul
+          li Hyperlink merupakan kata, kalimat atau gambar yang ketika diklik dapat navigasi ke halaman lainnya. Dengan link, pengunjung website dapat navigasi dengan mudah dari suatu halaman ke halaman lainnya. Gunakan tag < a > untuk mendefinisikan HTML Link. Secara default, link ditampilkan : 
+              li <p = "text-align:center">Warna biru & bergaris bawah untuk yang belum pernah dikunjungi
+              li <p = "text-align:center">Warna ungu & bergaris bawah untuk yang sudah pernah dikunjungi
+
+      section
         h2 Layout
+
+      section
         hr
         ul
           li Layout berbicara mengenai bagaimana penataan elemen-elemen dalam sebuah halaman dengan benar. Pada bagian ini, kita hanya akan membahas elemen-elemen layout yang umumnya ditemukan pada dokumen web, dan bagaimana membuat elemen-elemen tersebut dengan <b>HTML</b> dan <b>CSS</b>.
@@ -159,14 +213,6 @@ html
         li Sidebar
         li Content
         li Footer
-
-      section
-        ul
-          li Header = elemen yang biasanya berisi judul, logo website, maupun nama website.
-          li Navigation = memberikan akses navigasi ke halaman-halaman lain dalam website.
-          li Sidebar = dapat berupa iklan/menu tambahan, sidebar dapat terletak di kiri, kanan ataupun pada keduanya.
-          li Content = Isi utama dari suatu website.
-          li Footer = Bagian penutup dari website, dapat berupa lisensi pengunaan, <em>sitemap</em>, ataupun link ke website lain.
 
 
     // build:js scripts/scripts.js
