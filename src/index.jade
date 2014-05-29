@@ -188,6 +188,42 @@ html
           <li style="font-size:14px">Dimulai dengan tanda /*
           <li style="font-size:14px">Diakhiri dengan tanda */
 
+      section
+        h3 Mengimplementasikan CSS pada HTML
+          hr
+          <li style="font-size:14px">Setelah HTML selesai dituliskan,kita dapat mereferensikan CSS kepada HTML yang ada, agar desain yang dispesifikasi oleh CSS dapat diaplikasikan pada HTML
+          hr
+          ul Tiga Cara untuk memberikan referensi CSS,yaitu :
+            hr
+            <li style="font-size:14px">Referensi ke File eksternal
+            <li style="font-size:14px">Penulisan CSS pada elemen head
+            <li style="font-size:14px">CSS didalam atribut style pada elemen
+
+      section
+        h3 Referensi ke File Eksternal
+          hr
+          <li style="font-size:14px">Kita dapat memberikan referensi kesebuah file CSS yang berada diluar HTML
+          <li style="font-size:14px">Cara referensi CSS seperti ini sering kali dianggap sebagai best practice dalam pengembangan web
+          <li style="font-size:14px">Dilakukan dengan memanggil link nama file CSS yang akan digunakan(disimpang ekstensi .css)
+          <li style="font-size:14px">Dipanggil dengan menambahkan tag<link>pada bagian header halaman
+          <li style="font-size:14px"> link rel="stylesheet" href ="style.css"
+
+      section
+        h3 Penulisan CSS pada Elemen CSS pada Elemen Head
+          hr
+          <li style="font-size:14px">Penulisan CSS seperti ini tidak disarankan, karena umumnya elemen-elemen yang ada di dalam sebuah dokumen akan digunakan kembali pada dokumen lain.
+          <li style="font-size:14px">Penulisan CSS seperti ini akan menyebabkan elemen-elemen yang berulang harus dituliskan ulang pada dokumen lain juga
+          <li style="font-size:14px">Pendefinisian diletakkan diantara tag "style".."/style" pada bagian header
+          <li style="font-size:14px"> style type="text/css" h1 { color red;} /style
+
+      section
+        h3 CSS di dalam Atribut Style pada Elemen
+          hr
+          <li style="font-size:14px">Menuliskan CSS di dalam atribut style pada elemen HTML(atribut ini dimiliki oleh semua elemen)merupakan cara terakhir, yang juga tidak disaranakan karena penulisan seperti ini akan "mengotori" kode HTML
+          <li style="font-size:14px">Atribut style ditambah ke tag awal yang akan diberikan CSS
+          <li style="font-size:14px"> p style="font-weight:bold"
+
+
 
       h2 Cara Kerja WWW
       section
