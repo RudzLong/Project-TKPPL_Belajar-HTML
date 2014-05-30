@@ -310,9 +310,25 @@ html
 
       section
         ul
-          li Link ke Bagian tertentu suatu halaman web           
+          li Link ke Bagian tertentu suatu halaman web  
+            li Link ini berguna menyediakan <i>shorcut</i> ke informasi pada bagian bawah dan sebaliknya kembali ke atas. Caranya adalah :
+            li 1. Buat penamaan di lokasi tujuan.
+              li caranya : 
+                li Menggunakan atribut id dengan diberi nilai dengan nama sebagai target link. Contoh :
+                  li < h1 > id="startD" >D</ h1 >
+                li Gunakan atribut name dari tag < a > dimana atribut name diberi nilai dengan nama sebagai target link. Contoh:
+                  li < h1 >< a name="startD" ><font color="blue"><u>D</u></font>< /a >< /h1 >
+            li 2. Membuat link dengan target nama yang sudah dibuat di langkah pertama. Contoh :
+              li < p >A | B | C |< a href="#startD" ><font color="blue"><u>D</u></font>< /a >< /p >
+      
+      section
+        ul
           li Link Download
-
+            li Link ini berguna untuk mengaktifkan download suatu file. Caranya atribut href diisi dengan lokasi dan nama file yang akan didownload. Caranya : 
+              li 1. Buatlah struktur folder dan file seperti contoh ini : 
+                li folder "download" yang berisi "contoh.zip".
+              li 2. Ketikkan kode HTML seperti berikut : 
+                li < a href="download/contoh.zip" ><font color="blue"><u>Mikroskil</u></font>< /a >
       section
         h2 Layout
 
