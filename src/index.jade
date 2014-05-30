@@ -109,7 +109,7 @@ html
               li <p style="font-size:14px">Berbagai data yang ada di dalam elemen head tidak terlihat pada halaman web(tampilan browser)
           ul <b> Elemen title</b>
             li <p style="font-size:14px">memberikan judul dokumen
-          ul <b> elemen Body</b>
+          ul <b> Elemen Body</b>
             li <p style="font-size:14px">Merupakan isi utama dari dokumen HTML
             li <p style="font-size:14px">Semua Informasi yang akan ditampilkan seperti teks,gambar,suara dan sebagainya akan ditempatkan dibagian ini
             li <p style="font-size:14px">Memiliki beberapa atribut yang digunakan untuk mengatur penampilan dokumen HTML
@@ -202,6 +202,45 @@ html
           <li style="font-size:14px"> p style="font-weight:bold"
 
       section
+        h3 Grouped Selector
+          hr
+          <li style="font-size:14px">Bebebrapa selector format tampilannya secara umum menggunakan style yang sama dapat digabungkan menjadi satu.
+          <li style="font-size:14px">Setiap selector dipisahakan dengan tanda koma(,)
+          <li style="font-size:14px"> h1,h2,h3 {color:green;}
+
+      section
+        h3 Descendant Selector
+          hr
+          <li style="font-size:14px"> Diterapkan pada elemen yang diturunkan dari elemen lainnya.
+          <li style="font-size:14px"> Dibentuk dengan menambahkan spasi diantara elemen dengan elemen yang diturunkan.
+          <li style="font-size:14px"> p em{color:green}
+
+      section
+        h3 ID selector
+          hr
+          <li style="font-size:14px">selector id digunaan untuk menentukan style bagian unik dari html
+          <li style="font-size:14px">Unik disini artinya satu nama id bisa digunakan satu kali pada sebuah halaman web
+          <li style="font-size:14px">Digunakan simbol tanda pagar(#) diikuti nama id pada elemen, untuk mendeklarasikannya pada css
+          <li style="font-size:14px"> #satu{color:green;}
+
+      section
+        h3 Class Selector
+          hr
+          <li style="font-size:14px">Selector class digunakan untuk menentukan style dari sebuah group elemen terpilih.
+          <li style="font-size:14px">Selector class bisa dipakai berulangkali pada sebuah dokumen web
+          <li style="font-size:14px">Artinya sebuah nama class dapat dipanggil beberapa kali pada elemen-elemen yang ada pada sebuah halaman web
+          <li style="font-size:14px">Digunakan simbol titik(.) diikuti nama class pada elemen, untuk mendeklarasikannya pada CSS
+          <li style="font-size:14px"> .satu{color:green;}
+
+      section
+        h3 Universal Selector
+          hr
+          <li style="font-size:14px">Menerapkan Style CSS pada seluruh elemen
+          <li style="font-size:14px">Digunakan simbol tanda bintang(*) untuk mendeklarasikannya pada CSS
+          <li style="font-size:14px"> *{color:green;}
+
+
+      section
         h2 Tag HTML
         hr
         ul
@@ -237,9 +276,11 @@ html
           li < font face="Arial" size="5" color="#CCCC"> ... < /font >
 
       section
-        h2 Pemformatan dokumen HTML
+        h3 <b>Pemformatan dokumen HTML</b>
         ul
           li 
+          li Tag - tag yang biasa digunakan itu sangatlah banyak
+          li diantaranya :
           li <b>Tag <font color=red>< p ></font></b> 
           li untuk memulai paragraf baru 
           li Atribut dari <font color=red>< p ></font> : align
