@@ -349,6 +349,52 @@ html
             <div style="background:#CDE; border:25px solid #ABC; height:150px; margin:25px; padding:25px; width:500px;"></div>
             <li style="font-size:14px">Bagaimana cara membuatnya? Mari kita lihat properti-properti CSS yang memengaruhi Box Model
 
+      section
+        hr
+        ul
+          <div style="background:#CDE; border:25px solid #ABC; height:150px; margin:25px; margin-top:-100px; padding:25px; width:500px;">Konten</div>
+          <li style="margin-top:-75px;">Width
+          <li style="margin-top:-85px; margin-left:397px;">Height
+          <li style="margin-top:-63px; margin-left:-387px;">Padding
+          <li style="margin-top:-78px; margin-left:-479px;">Margin
+          <li style="margin-top:-10px; margin-left:-440px;">Border
+          <li style="margin-top:130px;"> Pengukuran Box Model
+
+      section
+        h3 Properti Height dan Width
+        hr
+        ul
+          li Setiap elemen yang ada dalam HTML memiliki tinggi dan lebar yang standar, yang didapatkan dengan menyesuaikan ukuran konten. Tergantung kepada tujuan pembuatan dokumen, tinggi dan lebar standar yang diberikan oleh elemen mungkin saja tidak tepat digunakan. Properti <b>height</b> dan <b>weight</b> digunakan untuk mengubah tinggi dan lebar standar ketika dibutuhkan.
+          li Berikut adalah contoh pengunaan kedua properti ini :
+          <li style="text-indent:-50px;"> div{
+          <li style="text-indent:67px;"> height: 20px;
+          <li style="text-indent:65px;"> width: 30px;
+          <li style="text-indent:-35px;"> }
+
+      section
+        h3 Properti Margin dan Padding
+        hr
+        ul
+          <li style="font-size:14px"> Setiap browser memberkan jarak antar elemen secara standar, agar elemen-elemen HTML dapat ditampilkan dengan optimal. Jarak antar elemen ini berbeda-beda, tergantung kepada browser yang mengimplementasikan. Untuk mengubah jarak antar elemen, kita dapat menggunakan properti margin.
+          <li style="font-size:14px"> Terkadang kita juga ingin memberikan jarak di dalam elemen sendiri, yaitu jarak dari konten elemen ke pembatas (border) elemen. Jarak ini dikenal dengan nama padding. Padding kerap digunakan untuk memberikan warna latar yang baik pada elemen. Berikut adalah contoh kode pengunaan margin dan padding :
+          <li style="text-indent:-50px;"> div {
+          <li style="text-indent:73px;"> margin: 10px;
+          <li style="text-indent:82px;"> padding: 15px;
+          <li style="text-indent:-27px;"> }
+
+      section
+        hr
+        ul
+          <li style="font-size:14px"> Sedikit catatan tambahan, properti padding dan margin dapat juga ditulis dengan singkat. Penulisan hanya dengan satu nilai seperti pada kode slide sebelumnya akan menyebabkan nilai padding dan margin diimplementasikan pada keempat sisi elemen (top, right, bottom and left)
+          <li style="font-size:14px"> Mengisikan dua nilai akan mengisikan nilai padding/margin atas dan bawah pada nilai pertama, serta kiri dan kanan pada nilai kedua, seperti berikut:
+          <li style="font-size:14px; text-indent:-50px;"> p{
+          <li style="font-size:14px; text-indent:80px;"> margin: 25px 50px;
+          <li style="font-size:14px; text-indent:-43px;"> }
+          <li style="font-size:14px"> Pengisian empat nilai akan dilakukan secara berurutan pada margin/padding dari atas, kanan, bawah, dan kiri, seperti ini:
+          <li style="font-size:14px; text-indent:-80px;"> p{
+          <li style="font-size:14px; text-indent:110px;"> margin: 10px 20px 30px 40px;
+          <li style="font-size:14px; text-indent:-73px;"> }
+
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
