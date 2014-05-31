@@ -452,7 +452,7 @@ html
         h3 Properti Margin dan Padding
         hr
         ul
-          <li style="font-size:14px"> Setiap browser memberkan jarak antar elemen secara standar, agar elemen-elemen HTML dapat ditampilkan dengan optimal. Jarak antar elemen ini berbeda-beda, tergantung kepada browser yang mengimplementasikan. Untuk mengubah jarak antar elemen, kita dapat menggunakan properti margin.
+          <li style="font-size:14px"> Setiap browser memberikan jarak antar elemen secara standar, agar elemen-elemen HTML dapat ditampilkan dengan optimal. Jarak antar elemen ini berbeda-beda, tergantung kepada browser yang mengimplementasikan. Untuk mengubah jarak antar elemen, kita dapat menggunakan properti margin.
           <li style="font-size:14px"> Terkadang kita juga ingin memberikan jarak di dalam elemen sendiri, yaitu jarak dari konten elemen ke pembatas (border) elemen. Jarak ini dikenal dengan nama padding. Padding kerap digunakan untuk memberikan warna latar yang baik pada elemen. Berikut adalah contoh kode pengunaan margin dan padding :
           <li style="text-indent:-50px;"> div {
           <li style="text-indent:73px;"> margin: 10px;
@@ -472,6 +472,44 @@ html
           <li style="font-size:14px; text-indent:110px;"> margin: 10px 20px 30px 40px;
           <li style="font-size:14px; text-indent:-73px;"> }
 
+      section
+        h3 Border
+        hr
+        ul
+          <li style="font-size:14px">Border fungsinya sebagai pemberi tanda batas elemen memisahkan margin dan padding. Terdapat tiga properti utama yang membentuk sebuah border, yaitu border-width, border-style, dan border-color.
+          <li style="font-size:14px">border-width, properti ini menentukan ketebalan border, yang diisikan dengan nilai pixel. Contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-width: 10px;
+          <li style="font-size:14px; text-indent:-37px;"> }
+          <li style="font-size:14px">border-style, properti ini menentukan cara penampilan dari border. Pilihan nilai yang dapat diisikan yaitu: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, dan outset. Ingin mengetahui kegunaan masing-masing nilai? Silahkan coba implementasikan saja elemen tersebut, jika tidak diisikan, maka secara otomatis nilai yang dipilih ialah none, sehingga border tidak akan tampak. Contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-style: solid;
+          <li style="font-size:14px; text-indent:-37px;"> }
+
+      section
+        hr
+        ul
+          <li style="font-size:14px">border-color, memberikan warna kepada border. Jika warna tidak diberikan, maka border akan otomatis menjadi warna hitam. Contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-color: red;
+          <li style="font-size:14px; text-indent:-35px;"> }
+          <li style="font-size:14px">Ketiga properti sebelumnya seringkali digunakan bersamaan, karena ketergantungan antar properti tersebut dalam membuat border yang bagus. Penggabungan ketiga properti dapat ditulis dalam properti border seperti kode berikut :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:90px;"> border: 1px solid red;
+          <li style="font-size:14px; text-indent:-33px;"> }
+          <li style="font-size:14px">Dan seperti yang dapat dilihat dari kode di atas, tentunya urutan penulisannya ialah border-width border-style border-color.
+
+      section
+        hr
+        ul
+          <li style="font-size:14px">Meskipun seluruh elemen pada dasarnya berbentuk kotak, CSS memungkinkan kita untuk menampilkan elemen dengan sedikit variasi, yaitu memberikan sudut bulat kepada elemen.
+          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
+          <li style="font-size:14px">Kita dapat menggunakan properti border-radius untuk membuat efek sudut bulat seperti gambar diatas, dengan menggunakan kode berikut :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-radius: 15px;
+          <li style="font-size:14px; text-indent:-35px;"> }
+
+      section
         h1 Tipografi
 
       section
@@ -485,6 +523,9 @@ html
           li Tipografi berbicara tentang <font color="red"> Readability</font> dan <font color="red">legibility</font> / mengenali setiap huruf dan kata.
           li Tipografi membuat teks menjadi menarik.
           li Secara Teknis, Tipografi membuat pemnbaca jika sekali membaca akan sulit untuk berhenti membaca / melakukan hal lain.
+
+      section
+        h1 Background
 
       section
         h3 Pengantar Background
