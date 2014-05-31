@@ -30,11 +30,16 @@ Scrummaster: Rudy Tantono (12 111 0740)
 	Tag - tag dasar HTML
 	HTML Lanjutan
 	Hyperlink
-	Layout
 	Tipografi
-
+	
 Sprint 2:
-
+29/5/2014 - 31/5/2014
+Scrummaster: Fredico (12 111 0758)
+	
+	Layout
+	Multimedia Image	
+	Multimedia Audio & Video
+	Properti CSS untuk Tipografi
 
 Sprint 3: 
 
@@ -102,4 +107,67 @@ Daily Scrum
 	Rudy Tantono
 	1. Semalam	: add project ke github, add contributor di github, push slide
 	2. Hari ini	: push lanjutan slide " Tag - Tag Dasar HTML"
+	3. Masalah	: -
+
+29/5/2014 (Kamis)
+	Andra
+	1. Semalam	: Push slide
+	2. Hari ini	: Membuat arti 5 elemen + Box Model
+	3. Masalah	: -
+
+	Fajar
+	1. Semalam	: Push slide
+	2. Hari ini	: push lanjutan slide "HTML & CSS Dasar"
+	3. Masalah	: -
+
+	Fredico
+	1. Semalam	: Push slide
+	2. Hari ini	: push lanjutan slide "Hyperlink"
+	3. Masalah	: -
+
+	Rudy Tantono
+	1. Semalam	: add project ke github, add contributor di github, push slide
+	2. Hari ini	: push logbook.txt, push slide :"pemformatan dokumen html", update readme.md
+	3. Masalah	: -
+
+30/5/2014 (Jumat)
+	Andra
+	1. Semalam	: push slide
+	2. Hari ini	: push slide properti height, width dan margin padding
+	3. Masalah	: -
+
+	Fajar
+	1. Semalam	: push slide
+	2. Hari ini	: push lanjutan slide "HTML & CSS Dasar"
+	3. Masalah	: -
+
+	Fredico
+	1. Semalam	: push slide
+	2. Hari ini	: push slide "Hyperlink"
+	3. Masalah	: -
+
+	Rudy Tantono
+	1. Semalam	: add project ke github, add contributor di github, push slide
+	2. Hari ini	: push lanjutan slide " Pemformatan dokumen html"
+	3. Masalah	: -
+
+31/5/2014 (Sabtu)
+	Andra
+	1. Semalam	: push slide
+	2. Hari ini	: push lanjutan slide "Layout"
+	3. Masalah	: -
+
+	Fajar
+	1. Semalam	: push slide
+	2. Hari ini	: membuat slide baru
+	3. Masalah	: -
+
+	Fredico
+	1. Semalam	: push slide
+	2. Hari ini	: membuat slide  "Tipografi"
+	3. Masalah	: -
+
+	Rudy Tantono
+	1. Semalam	: add project ke github, add contributor di github, push slide
+	2. Hari ini	: push lanjutan slide " Pemformatan dokumen html"
 	3. Masalah	: -

@@ -276,9 +276,11 @@ html
           li < font face="Arial" size="5" color="#CCCC"> ... < /font >
 
       section
-        h2 Pemformatan dokumen HTML
+        h3 <b>Pemformatan dokumen HTML</b>
         ul
           li 
+          li Tag - tag yang biasa digunakan itu sangatlah banyak
+          li diantaranya :
           li <b>Tag <font color=red>< p ></font></b> 
           li untuk memulai paragraf baru 
           li Atribut dari <font color=red>< p ></font> : align
@@ -313,6 +315,24 @@ html
           li right
 
       section
+        ul
+          li <b>Tag <font color=red>< hr ></font></b>
+          li untuk membuat garis batas horizontal
+          li sekaligus akan membuat garis baru
+          li Tag ini memiliki beberapa atribut, sebagai berikut :
+          li <em>align</em> : Menentukan posisi vertikal garis pemisah
+          li <em>color</em> : menentukan warna garis batas
+          li <em>noshade</em> : Menonaktifkan efek tiga dimensi
+          li <em>size</em> : Menentukan tebal garis batas
+          li <em>width</em> : Menentukan lebar garis batas, dimana nilai yang dimasukkan dapat berupa pixel mauun persen dari lebar jendela browser
+
+      section
+        ul
+          li <b>Tag <font color=red>< pre > ... < /pre ></font></b>
+          li untuk membuat tampilan dokumen HTML pada browser sama dengan tampilan pada teks editor
+          
+
+      section
         h1 Hyperlink
           
       section
@@ -337,7 +357,7 @@ html
       section
         ul
           li Jenis-jenis Link:
-          ul
+          uli
           li Link Absolut
             li Menguraikan URL lengkap dari dokumen target link. Contoh :
               li < a href="http://www.mikroskil.ac.id" target="_blank" ><font color="blue"><u>Mikroskil</u></font>< /a >
@@ -350,8 +370,25 @@ html
 
       section
         ul
-          li Link ke Bagian tertentu suatu halaman web           
+          li Link ke Bagian tertentu suatu halaman web  
+            li Link ini berguna menyediakan <i>shorcut</i> ke informasi pada bagian bawah dan sebaliknya kembali ke atas. Caranya adalah :
+            li 1. Buat penamaan di lokasi tujuan.
+              li caranya : 
+                li Menggunakan atribut id dengan diberi nilai dengan nama sebagai target link. Contoh :
+                  li < h1 > id="startD" >D</ h1 >
+                li Gunakan atribut name dari tag < a > dimana atribut name diberi nilai dengan nama sebagai target link. Contoh:
+                  li < h1 >< a name="startD" ><font color="blue"><u>D</u></font>< /a >< /h1 >
+            li 2. Membuat link dengan target nama yang sudah dibuat di langkah pertama. Contoh :
+              li < p >A | B | C |< a href="#startD" ><font color="blue"><u>D</u></font>< /a >< /p >
+      
+      section
+        ul
           li Link Download
+            li Link ini berguna untuk mengaktifkan download suatu file. Caranya atribut href diisi dengan lokasi dan nama file yang akan didownload. Caranya : 
+              li 1. Buatlah struktur folder dan file seperti contoh ini : 
+                li folder "download" yang berisi "contoh.zip".
+              li 2. Ketikkan kode HTML seperti berikut : 
+                li < a href="download/contoh.zip" ><font color="blue"><u>Mikroskil</u></font>< /a >
 
       section
         h2 Layout
@@ -435,39 +472,42 @@ html
           <li style="font-size:14px; text-indent:110px;"> margin: 10px 20px 30px 40px;
           <li style="font-size:14px; text-indent:-73px;"> }
 
-      section
-        h3 tipografi
-        hr 
-        <li style="font-size:14px">tipografi merupakan salah satu bahasan dalam bidang desain grafis yang berfokus pada teknik dan seni membuat teks menjadi dapat dicerna dengan mudah
-        <li style="font-size:14px">perancangan teks pada tipografi dilakukan melalui typesetting,yaitu pengaturan komposisi huruf dan teks
-        <li style="font-size:14px">Komposisi pada typesetting mencakup jenis huruf yang digunakan,ukuran huruf,panjang baris,jarak antar baris,jarak antar kata, dan jarak antar huruf
+        h1 Tipografi
 
       section
-        h3 Prinsip Utama Tipografi
-        <li style="font-size:14px">tipografi diciptakan untuk menghargai konten(teks) dengan memaksimalkan penampilan konten tesebut
-        <li style="font-size:14px">tipografi diciptakan untuk memanjakan pembaca dengan memberikan pengalaman yang menarik dalam membaca teks
+        ul
+          li Tipografi merupakan salah satu bahasan dalam bidang design grafis yang berfokus pada teknik dan seni membuat teks menjadi dapat disimak dengan mudah.
+          li Perancangan teks pada tipografi dilakukan melalui <i>typesetting</i>, yaitu pengaturan komposisi huruf dan teks.
+          li Komposisi pada <i>typesetting</i> mencakup jenis huruf yang digunakan, ukuran, panjang, jarak.
 
       section
-        h3 TypeFace
-        <li style="font-size:14px">Typeface merupakan karakter-karakter yang dirancang secara khusus untuk digunakan bersama-sama
-        <li style="font-size:14px">Sebagai karakter yang dirancang untuk digunakan bersama-sama. tentunya sebuah typeface memiliki kesamaan fitur-fitur desain
-        <li style="font-size:14px">Yang dimaksud dengan fitur-fitur desain ialah ciri-ciri visual dari karakter-karakter yang ada di dalam typeface
-        <li style="font-size:14px">Untuk mendapatkan kesamaan fitur,Beberapa bagian dari sebuah karakter sering kali akan ditemukan pada karakter lain dalam sebuah typeface yang sama
+        ul
+          li Tipografi berbicara tentang <font color="red"> Readability</font> dan <font color="red">legibility</font> / mengenali setiap huruf dan kata.
+          li Tipografi membuat teks menjadi menarik.
+          li Secara Teknis, Tipografi membuat pemnbaca jika sekali membaca akan sulit untuk berhenti membaca / melakukan hal lain.
 
       section
-        h3 Font
-        <li style="font-size:14px">Jika typeface berbicara tentang karakter yang dirancang untuk diguankan bersama-sama, font(dalam konteks tipografi web dan tipografi digital) berbicara mengenai file yang menyimpan typeface
-        <li style="font-size:14px">Diibaratkan seperti lagu dengan MP3, typeface adalah merupakan karya seorang seniman(typedesigner)yang dapat diinterpretasikan secara bebas, sementara font hanyalah medium yang digunakan oleh komputer untuk menampilakn typeface
+        h3 Pengantar Background
+        <li style="font-size:14px"> BackGround atau dikenal dengan latar belakang,merupakan salah satu komponen desain yang cukup penting
+        <li style="font-size:14px">Background memiliki pengaruh yang sangat besar terhadap keseluruhan desain dari sebuah website
+        <li style="font-size:14px">Penambahan latar belakang kesebuah elemen dapat dilakukan dengan banyak cara,mulai dari penambahan warna,penambahan gambar,ataupun penggabungan dari keduanya
 
+      section
+        h3 Property CSS untuk background
+        <li style="font-size:14px">Penambahan warna dilakukan dengan properti background atau background-color
+        <li style="font-size:14px">contoh penggunaan : div {background:#f00; background-color:#F00;}
 
+      section
+        h3 Warna latar belakang
+        <li style="font-size:14px">Pengisian nilai dari properti ini dapat menggunakan beberapa cara, yaitu kode heksa,rg,rgba,hsl,maupun hsla
+        <li style="font-size:14px">div{background:#F00;background:rgb(255,0,0);background:rgba(255,0,0,1);background:hsl(0,50,100);background:hsla(0,50,100,1);}
 
-
-
-
-
-
-
-
+      section
+        h3 Gambar Latar Belakang
+        <li style="font-size:14px">Penambbahan gambar latar belakang juga dilakukan dengan menggnunakan dua properti,yaitu background dan background-image
+        <li style="font-size:14px">contoh penggunaan : div{background:url(latar.png);background-image:url(latar.png);}
+        <li style="font-size:14px">Penambahan gambar dengan cara tersebut akan memberikan masalah ketika ukuran gambar tidak sama dengan ukuran elemen
+        <li style="font-size:14px">Gambar akan ditampilakn berulangkali,secara horizontal maupun vertikal,jika ukuran elemen lebih besar dari ukuran gambar
 
 
     // build:js scripts/scripts.js
