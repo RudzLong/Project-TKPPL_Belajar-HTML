@@ -126,7 +126,7 @@ Daily Scrum
 	3. Masalah	: -
 
 	Rudy Tantono
-	1. Semalam	: add project ke github, add contributor di github, push slide
+	1. Semalam	: Push Slide
 	2. Hari ini	: push logbook.txt, push slide :"pemformatan dokumen html", update readme.md
 	3. Masalah	: -
 

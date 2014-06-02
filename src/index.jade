@@ -330,7 +330,100 @@ html
         ul
           li <b>Tag <font color=red>< pre > ... < /pre ></font></b>
           li untuk membuat tampilan dokumen HTML pada browser sama dengan tampilan pada teks editor
+
+      section
+        ul
+          li 
+          li <b>Tag <font color=red>< center > ... < /center ></font></b>
+          li untuk menampilkan posisi teks rata di tengah
+          li <b>Tag <font color=red>< div > ... < /div ></font></b>
+          li berfungsi seperti tag <font color=red>< p ></font>
+          li berguna untuk mengelompokkan sejumlah baris eks yang memiliki karakteristik yang sama
+          li Tag div ini memiliki atribut align juga
+          li dimana fungsi align disini adalah untuk mengatur teks
           
+      section
+        ul
+          li Nilai - nilai dari align tersebut : 
+          li center
+          li justify
+          li left (default)
+          li right
+
+      section
+        h2 Pemformatan Teks
+        ul
+          li 
+          li <b>Logical format</b> :
+          li untuk menerapkan layout dokumen secara logis dan terstruktur atau seperti teks yang ditekankan
+          <hr>
+          li <b>Physical format</b> :
+          li untuk memberikan format terhadap fisik suatu font
+
+      section
+        Tag Tag-tag logical format :
+        table(style="font-size:15px;text-align:left;")
+          tr
+            td(style="width:30%;border-bottom:2px solid;") <b>Tag</b>
+            td(style="border-bottom:2px solid;") <b>Fungsi</b>
+          tr
+            td(style="border-bottom:1px solid;") < cite >...< /cite >
+            td(style="border-bottom:1px solid;") Menandai suatu kutipan (citation)
+          tr
+            td(style="border-bottom:1px solid;") < code >...< /code >
+            td(style="border-bottom:1px solid;") Menampilkan kode-kode pemrograman (umumnya teks ditampilkan dengan font monoskrip)
+          tr
+            td(style="border-bottom:1px solid;") < em >...< /em >
+            td(style="border-bottom:1px solid;") Menandai suatu teks yang ditekankan oleh penulis (umumnya teks ditampilkan miring)
+          tr
+            td(style="border-bottom:1px solid;") < kbd >...< /kbd>
+            td(style="border-bottom:1px solid;") Menandai suatu teks yang harus dimasukkan oleh user melalui keyboard (umumnya teks ditampilkan dengan font monospasi)
+          tr
+            td(style="border-bottom:1px solid;") < samp >...< /samp >
+            td(style="border-bottom:1px solid;") Menandai suau teks yang dimaksudkan sebagai contoh (umumnya teks ditampilkan dengann font monospasi)
+          tr
+            td(style="border-bottom:1px solid;") < strong >...< /strong >
+            td(style="border-bottom:1px solid;") Menandai bagian yang terpenitng dari suatu teks (biasanya teks disajikan dalam bentuk cetak tebal)
+          tr
+            td(style="border-bottom:1px solid;") < var >...< var >
+            td(style="border-bottom:1px solid;") Menampilkan nama variabel atau ekspresi matematika / program komputer (biasanya teks disajikan dalam bentuk cetak miring)
+          tr
+            td(style="border-bottom:1px solid;") < dfn >...< dfn >
+            td(style="border-bottom:1px solid;") Menandai sebuah subdefinisi dari daftar definisi
+
+      section
+        Tag Tag-tag physical format :
+        table(style="font-size:15px;text-align:left;")
+          tr
+            td(style="width:30%;border-bottom:2px solid;") <b>Tag</b>
+            td(style="border-bottom:2px solid;") <b>Fungsi</b>
+          tr
+            td(style="border-bottom:1px solid;") < b >...< /b >
+            td(style="border-bottom:1px solid;") Menampilkan huruf tebal
+          tr
+            td(style="border-bottom:1px solid;") < i >...< /i >
+            td(style="border-bottom:1px solid;") Menampilkan huruf miring
+          tr
+            td(style="border-bottom:1px solid;") < tt >...< /tt >
+            td(style="border-bottom:1px solid;") Menampilkan huruf seperti huruf mesin ketik
+          tr
+            td(style="border-bottom:1px solid;") < u >...< /u >
+            td(style="border-bottom:1px solid;") Menampilkan garis bawah pada suatu kata
+          tr
+            td(style="border-bottom:1px solid;") < strike >...< /strike >
+            td(style="border-bottom:1px solid;") Menampilkan garis horizontal pada bagian tengah huruf
+          tr
+            td(style="border-bottom:1px solid;") < big >...< /big >
+            td(style="border-bottom:1px solid;") Menampilkan ukuran huruf yang lebih besar
+          tr
+            td(style="border-bottom:1px solid;") < small >...< /small >
+            td(style="border-bottom:1px solid;") Menampilkan ukuran huruf yang lebih besar
+          tr
+            td(style="border-bottom:1px solid;") < sub >...< /sub >
+            td(style="border-bottom:1px solid;") Menampilkan subscript
+          tr
+            td(style="border-bottom:1px solid;") < sup >...< /sup >
+            td(style="border-bottom:1px solid;") Menampilkan superscript
 
       section
         h1 Hyperlink
@@ -452,7 +545,7 @@ html
         h3 Properti Margin dan Padding
         hr
         ul
-          <li style="font-size:14px"> Setiap browser memberkan jarak antar elemen secara standar, agar elemen-elemen HTML dapat ditampilkan dengan optimal. Jarak antar elemen ini berbeda-beda, tergantung kepada browser yang mengimplementasikan. Untuk mengubah jarak antar elemen, kita dapat menggunakan properti margin.
+          <li style="font-size:14px"> Setiap browser memberikan jarak antar elemen secara standar, agar elemen-elemen HTML dapat ditampilkan dengan optimal. Jarak antar elemen ini berbeda-beda, tergantung kepada browser yang mengimplementasikan. Untuk mengubah jarak antar elemen, kita dapat menggunakan properti margin.
           <li style="font-size:14px"> Terkadang kita juga ingin memberikan jarak di dalam elemen sendiri, yaitu jarak dari konten elemen ke pembatas (border) elemen. Jarak ini dikenal dengan nama padding. Padding kerap digunakan untuk memberikan warna latar yang baik pada elemen. Berikut adalah contoh kode pengunaan margin dan padding :
           <li style="text-indent:-50px;"> div {
           <li style="text-indent:73px;"> margin: 10px;
@@ -472,6 +565,44 @@ html
           <li style="font-size:14px; text-indent:110px;"> margin: 10px 20px 30px 40px;
           <li style="font-size:14px; text-indent:-73px;"> }
 
+      section
+        h3 Border
+        hr
+        ul
+          <li style="font-size:14px">Border fungsinya sebagai pemberi tanda batas elemen memisahkan margin dan padding. Terdapat tiga properti utama yang membentuk sebuah border, yaitu border-width, border-style, dan border-color.
+          <li style="font-size:14px">border-width, properti ini menentukan ketebalan border, yang diisikan dengan nilai pixel. Contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-width: 10px;
+          <li style="font-size:14px; text-indent:-37px;"> }
+          <li style="font-size:14px">border-style, properti ini menentukan cara penampilan dari border. Pilihan nilai yang dapat diisikan yaitu: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, dan outset. Ingin mengetahui kegunaan masing-masing nilai? Silahkan coba implementasikan saja elemen tersebut, jika tidak diisikan, maka secara otomatis nilai yang dipilih ialah none, sehingga border tidak akan tampak. Contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-style: solid;
+          <li style="font-size:14px; text-indent:-37px;"> }
+
+      section
+        hr
+        ul
+          <li style="font-size:14px">border-color, memberikan warna kepada border. Jika warna tidak diberikan, maka border akan otomatis menjadi warna hitam. Contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-color: red;
+          <li style="font-size:14px; text-indent:-35px;"> }
+          <li style="font-size:14px">Ketiga properti sebelumnya seringkali digunakan bersamaan, karena ketergantungan antar properti tersebut dalam membuat border yang bagus. Penggabungan ketiga properti dapat ditulis dalam properti border seperti kode berikut :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:90px;"> border: 1px solid red;
+          <li style="font-size:14px; text-indent:-33px;"> }
+          <li style="font-size:14px">Dan seperti yang dapat dilihat dari kode di atas, tentunya urutan penulisannya ialah border-width border-style border-color.
+
+      section
+        hr
+        ul
+          <li style="font-size:14px">Meskipun seluruh elemen pada dasarnya berbentuk kotak, CSS memungkinkan kita untuk menampilkan elemen dengan sedikit variasi, yaitu memberikan sudut bulat kepada elemen.
+          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
+          <li style="font-size:14px">Kita dapat menggunakan properti border-radius untuk membuat efek sudut bulat seperti gambar diatas, dengan menggunakan kode berikut :
+          <li style="font-size:14px; text-indent:-50px;"> div{
+          <li style="font-size:14px; text-indent:80px;"> border-radius: 15px;
+          <li style="font-size:14px; text-indent:-35px;"> }
+
+      section
         h1 Tipografi
 
       section
@@ -485,6 +616,9 @@ html
           li Tipografi berbicara tentang <font color="red"> Readability</font> dan <font color="red">legibility</font> / mengenali setiap huruf dan kata.
           li Tipografi membuat teks menjadi menarik.
           li Secara Teknis, Tipografi membuat pemnbaca jika sekali membaca akan sulit untuk berhenti membaca / melakukan hal lain.
+
+      section
+        h1 Background
 
       section
         h3 Pengantar Background
