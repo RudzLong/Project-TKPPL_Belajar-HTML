@@ -38,10 +38,17 @@ Scrummaster: Fredico (12 111 0758)
 	
 	Layout
 	Multimedia Image	
-	Multimedia Audio & Video
+	Pembahasan Background
 	Properti CSS untuk Tipografi
 
 Sprint 3: 
+02/6/2014 - 04/6/2014
+Scrummaster: Fajar Julianto (12 111 1087)
+	
+	Table
+	List	
+	Box Modeling & Positioning
+	Multimedia Audio & video
 
 
 Sprint 4:
@@ -170,4 +177,25 @@ Daily Scrum
 	Rudy Tantono
 	1. Semalam	: add project ke github, add contributor di github, push slide
 	2. Hari ini	: push lanjutan slide " Pemformatan dokumen html"
+	3. Masalah	: -
+
+02/6/2014 (Senin)
+	Andra
+	1. Semalam	: Tambahan slide border
+	2. Hari ini	: push Slide baru "Property CSS untuk tipografi"
+	3. Masalah	: -
+
+	Fajar
+	1. Semalam	: push Slide Pembahasan Background
+	2. Hari ini	: Menyambung Slide Pembahasan Background
+	3. Masalah	: -
+
+	Fredico
+	1. Semalam	: membuat slide tipografi
+	2. Hari ini	: PUSH tambahan tipografi
+	3. Masalah	: -
+
+	Rudy Tantono
+	1. Semalam	: melakukan push Pemformatan dokumen html
+	2. Hari ini	: push lanjutan slide " Pemformatan dokumen teks"
 	3. Masalah	: -
