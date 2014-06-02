@@ -509,6 +509,47 @@ html
         <li style="font-size:14px">Penambahan gambar dengan cara tersebut akan memberikan masalah ketika ukuran gambar tidak sama dengan ukuran elemen
         <li style="font-size:14px">Gambar akan ditampilakn berulangkali,secara horizontal maupun vertikal,jika ukuran elemen lebih besar dari ukuran gambar
 
+      section
+        h3 Perulangan Gambar Latar
+        hr
+        <li style="font-size:14px">Kita dapat menggunakan properti background-repeat untuk mengatur bagaimana perulangan gambar latar ingin dilakukan
+        <li style="font-size:14px">Terdapat empat nilai yang dapat diisikan pada properti background-repeat, yaitu repat,no-repeat,repeat-x dan repeat-y, dengan nilai repeat yang merupakan nilai default yang memberikan perulangan pada sumbu x dan sumbu y
+        <li style="font-size:14px">Nilai no-repeat menghilangkan perulangan,repeat-x memberikan(horizontal) dan repeat-y memberikan perulangan pada sumbu y ( vertikal )
+
+      section
+        h3 Posisi Gambar Latar
+        hr
+        <li style="font-size:14px">Posisi gambar latar dapat diatur menggunakan properti background-position, yang menerima dua nilai:koordinat sumbu x dan sumbu y tempat kita ingin meletakkan gambar latar
+        <li style="font-size:14px">Koordinat yang diisikan menggunakan sistem koordinat kartesius terbalik,dimana titik 0,0 berada pada kiri atas elemen
+
+      section
+        h3 Penggabungan Gambar latar
+        hr
+        <li style="font-size:14px"> Salah satu fitur CSS yang sangat memudahkan kita dalam membuat desain yang baik ialah kemudahan yang disediakan untuk memberikan beberapa gambar latar belakang pada sebuah elemen
+        <li style="font-size:14px">Cara pemberiannya sederhana, dengan hanya menambahkan daftar latar belakang yang ingin digunakan, dipisahkan dengan tanda.
+
+      section
+        h3 Gradien
+        hr
+        <li style="font-size:14px">Gradien digunakan dalam desain terutama untuk menghilangkan impresi warna yang terlalu besar, ataupun untuk memberikan efek transisi kepada pengguna
+        <li style="font-size:14px">Terdapat dua jenis gradien utama, yaitu "Linear Gradient" dan "Radial Gradient"
+        <li style="font-size:14px">Untuk membuat linear gradient, kita dapat menggunakan sintaks sebagai berikut
+        <li style="font-size:14px">div {background:linear-gradient(#F00,#F80)}
+
+      section
+        h3 Linear Gradien
+        hr
+        <li style="font-size:14px">Dapat juga menambahkan arah gradien dengan menambahkan nilai arah yang diinginkan pada parameter pertama fungsi
+        <li style="font-size:14px">Nilai-nilai yang dapat diisikan pada parameter pertama ialah nilai arah dan gabungannya, seperti right,left,top,bottom, maupun top right, bottom left, dan seterusnya
+        <li style="font-size:14px">Dapat juga mengisikan nilai derajat lingkaran pada parameter pertama
+
+      section
+        h3 Radial Gradien
+        hr
+        <li style="font-size:14px">Pembuatan radial sendiri menggunakan sintaks yang sama, dengan nama fungsi radial-gradient
+        <li style="font-size:14px">div{background:radial-gradient(#FOO,#FFF)} 
+
+
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
