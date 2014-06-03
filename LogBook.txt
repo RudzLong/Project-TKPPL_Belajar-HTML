@@ -182,8 +182,8 @@ Daily Scrum
 02/6/2014 (Senin)
 	Andra
 	1. Semalam	: Tambahan slide border
-	2. Hari ini	: push Slide baru "Property CSS untuk tipografi"
-	3. Masalah	: -
+	2. Hari ini	: -
+	3. Masalah	: Telat melakukan push
 
 	Fajar
 	1. Semalam	: push Slide Pembahasan Background
@@ -192,10 +192,31 @@ Daily Scrum
 
 	Fredico
 	1. Semalam	: membuat slide tipografi
-	2. Hari ini	: PUSH tambahan tipografi
+	2. Hari ini	: menambah slide tipografi
 	3. Masalah	: -
 
 	Rudy Tantono
 	1. Semalam	: melakukan push Pemformatan dokumen html
 	2. Hari ini	: push lanjutan slide " Pemformatan dokumen teks"
+	3. Masalah	: -
+
+03/6/2014 (Selasa)
+	Andra
+	1. Semalam	: -
+	2. Hari ini	: Membuat Slide Font-Family,Font-size dan Font-Style
+	3. Masalah	: -
+
+	Fajar
+	1. Semalam	: Menyelesaikan Slide Background
+	2. Hari ini	: Membuat Slide Pengantar List
+	3. Masalah	: -
+
+	Fredico
+	1. Semalam	: Menambah slide tipografi
+	2. Hari ini	: Menyambung Slide Tipografi
+	3. Masalah	: -
+
+	Rudy Tantono
+	1. Semalam	: push lanjutan slide " Pemformatan dokumen teks"
+	2. Hari ini	: Membuat Slide table
 	3. Masalah	: -
