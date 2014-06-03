@@ -426,6 +426,34 @@ html
             td(style="border-bottom:1px solid;") Menampilkan superscript
 
       section
+        ul
+          li tag < q >...< /q >
+          li untuk menandai suatu kutipan pendek
+          li < blockquote >...< /blockquote>
+          li * untuk menandai bagian yang dikhususkan pada sebuah dokumen, misalnya kutipan-kutipan dari kitab suci atau kata-kata mutiara, dan sebagainya
+          li * Biasanya teks akan tampil lebih kedalam
+          li Tag < address >...< /address >
+          li untuk mendefinisikan suatu alamat
+          li Tag < abbr >... < /abbr>
+          li untuk mendefinisikan suatu singkatan
+          li Tag < acronym >...< /acronym >
+          li untuk mendefinisikan suatu akronim/singkatan     
+
+      section
+        ul
+          li Tag < del >...< /del >
+          li untuk mendefinisikan teks yang dihapus
+          li Tag < bdo >...< /bdo >
+          li untuk mendefinisikan arah penulisan teks
+          li tag ini memiliki 1 atribut dan beberapa nilai:
+          li atribut : dir
+          li Nilainyai :
+          li ltr -> left to right (default)
+          li rtl -> right to lefe
+          li Tag < ins >...< /ins >
+          li untuk mendefinisikan teks yang disisipkan
+
+      section
         h1 Hyperlink
           
       section
@@ -635,10 +663,61 @@ html
         ul
           li Dalam dunia web, terdapat lima klasifikasi huruf yang dapat dicetak oleh browser, yaitu :
             li Serif
+              li Huruf yang memiliki tanda dekoratif pada ujung dari setiap huruf. Tanda dekoratif tersebut dikenal dengan nama " Serif ". Jenis huruf ini umum digunakan pada bagian heading dari dokumen
             li Sans-serif
+              li Huruf yang tidak memiliki serif. Jenis huruf ini biasanya digunakan untuk konten utama dari teks.
             li Monospace
-            li Cursive
-            li Fantasy
+              li Pada jenis huruf ini, setiap huruf memiliki ukuran lebar yang sama sehingga huruf dapat disusun dengan rapi. Biasanya huruf jenis ini digunakan untuk kode program.
+      section
+        ul     
+          li Cursive
+            li Jenis huruf ini memodelkan cursive, yaitu tulisan tangan manusia. Biasanya digunakan hanya sebagai dekorasi untuk memperindah bagian tertentu dari dokumen, mis kutipan. Huruf ini jarang digunakan untuk seluruh teks.
+          li Fantasy
+            li Huruf yang mengandung simbol atau berbagai dekorasi pada setiap karakter. Mis, huruf a dapat saja berbentuk kelinci. Huruf ini biasanya digunakan untuk memperindah bagian tertentu dari dokumen.
+
+      section 
+        h2 Properti CSS untuk Tipografi
+
+      section
+        h3 Warna Teks ( Properti Color )
+        ul
+          <li style="font-size:14px"> Perubahan <i>typeface</i> dan warna merupakan salah satu perubahan yang memiliki dampak cukup besar pada dokumen
+          <li style="font-size:14px"> Perubahan warna teks dapat dilakukan dengan menggunakan properti color dari CSS, yaitu : nilai heksadesimal, RGB, RGBa, HSL, dan HSLa ke properti ini
+          <li style="font-size:14px"> Kode berikut memberikan contoh penggunaan properti color dari CSS : 
+          <li style="font-size:12px"> Penulisan dengan kata kunci
+          <li style="font-size:14px; text-indent:-50px;"> p{
+          <li style="font-size:14px; text-indent:45px;"> color: blue;
+          <li style="font-size:14px; text-indent:-38px;"> }
+
+          <li style="font-size:12px"> Penulisan dengan heksadesimal
+          <li style="font-size:14px; text-indent:-50px;"> p{
+          <li style="font-size:14px; text-indent:80px;"> color: #0000FF;
+          <li style="font-size:14px; text-indent:-38px;"> }
+
+      section
+        ul
+          <li style="font-size:14px"> Penulisan dengan nilai RGB ( red, green, blue )
+          <li style="font-size:14px, text-indent:-50px;"> p{
+          <li style="font-size:14px, text-indent:80px;"> color: rgb(0, 0, 225);
+          <li style="font-size:14px, text-indent:-38px;"> }
+
+          <li style="font-size:14px"> Penulisan dengan nilai RGBa ( red, green, blue, trasnparansi )
+          <li style="font-size:14px, text-indent:-50px;"> p{
+          <li style="font-size:14px, text-indent:80px;"> color: rgba(0, 0, 255, 1);
+          <li style="font-size:14px, text-indent:-38px;"> }
+
+      section
+        ul
+          <li style="font-size:14px"> Penulisan dengan nilai HSL (warna, kejenuhan, intensitas cahaya)
+          <li style="font-size:14px, text-indent:-50px;"> p{
+          <li style="font-size:14px, text-indent:80px;"> color: hsl(202, 100%, 50%);
+          <li style="font-size:14px, text-indent:-38px;"> }
+
+          <li style="font-size:14px"> Penulisan dengan nilai HSLa(warna, kejenuhan, intensitas cahaya, transparansi)
+          <li style="font-size:14px, text-indent:-50px;"> p{
+          <li style="font-size:14px, text-indent:80px;"> color: hsla(202, 100%, 50%, 1);
+          <li style="font-size:14px, text-indent:-38px;"> }
+          <li style="font-size:12px"> Jika ingin melihat efek tiap warna dengan jelas, anda dapat bereksperimen secara langsung dengan kode yang dibuat di atas. Nilai warna sendiri disarankan diambil langsung dari program pengolah grafis seperti <b>Photoshop / Dreamweaver</b> untuk menghemat waktu dalam pengembangan. Program pengolah grafis umumnya memiliki fitur untuk konversi warna ke berbagai format.
 
       section
         h1 Background
@@ -657,7 +736,7 @@ html
       section
         h3 Warna latar belakang
         <li style="font-size:14px">Pengisian nilai dari properti ini dapat menggunakan beberapa cara, yaitu kode heksa,rg,rgba,hsl,maupun hsla
-        <li style="font-size:14px">div{background:#F00;background:rgb(255,0,0);background:rgba(255,0,0,1);background:hsl(0,50,100);background:hsla(0,50,100,1);}
+        <li style="font-size:14px">div{background:#F00; background:rgb(255,0,0); background:rgba(255,0,0,1); background:hsl(0,50,100); background:hsla(0,50,100,1);}
 
       section
         h3 Gambar Latar Belakang
