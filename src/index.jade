@@ -675,6 +675,30 @@ html
           li Fantasy
             li Huruf yang mengandung simbol atau berbagai dekorasi pada setiap karakter. Mis, huruf a dapat saja berbentuk kelinci. Huruf ini biasanya digunakan untuk memperindah bagian tertentu dari dokumen.
 
+      section
+        h3 Sistem Pengukuran Huruf
+        ul
+          li Pengukuran teks untuk web dilakukan dengan menggunakan 4 satuan, yaitu :
+            li Ems ( em )
+              <li style="font-size:10px"> em merupakan unit pengukuran skala, meningkat atau menurun relatif terhadap ukuran teks dasar. Misalnya, jika ukuran teks dasar adalah 12pt maka 1em dihhitung 12pt.
+            li Pixels ( px )
+              <li style="font-size:10px"> Pixel merupakan unit pengukuran berukuran tetap. Satu pixel merupakan satu titik pada layar komputer. Unit ini biasanya digunakan untuk mementingkan pengukuran tepat.
+            li Points ( pt )
+              <li style="font-size:10px"> Merupakan unit pengukuran pada percetakan tradisional, 1pt sama dengan 1/72 inch.
+            li Percents ( % )
+              <li style="font-size:10px"> seperti em, percent merupakan unit pengukuran yang ukurannya berubah sesuai dengan ukuran teks dasar, pada percent ukuran teks dasar ialah 100%.
+
+      section
+        h3 Jarak Antar Baris
+        ul
+          li Jarak antar baris yang terlalu dekat akan menyebabkan teks sulit atau bahkan tidak dapat dibaca
+          li Di sisi lain, jarak antar baris yang terlalu jauh akan menyebabkan teks terasa aneh untuk dibaca
+          li Contoh : 
+            <li style="letter-spacing : -0.25em">Dibukabarupantaimikroskilsetiapmusimhujan!!!
+            <li style="letter-spacing : 1em">Dibuka baru pantai mikroskil setiap musim hujan !!!
+          li Pada contoh, teks pertama tidak memiliki jarak antar baris, sementara teks kedua memiliki jarak antar baris yang lumayan besar.
+          li Idealnya setiap paragraf dan baris memiliki jarak antar kata dan karakter yang dibuat khusus untuk memaksimalkan kemudahan pembacaan teks.
+
       section 
         h2 Properti CSS untuk Tipografi
 
@@ -765,6 +789,73 @@ html
           <li style="font-size:14px; text-indent:-18px;"> }
 
       section
+        h3 Properti font-variant
+        ul
+          <li style="font-size:14px"> Properti <b>font-variant</b> digunakan untuk memberikan tampilan <b>small caps</b>, yaitu seluruh teks ditulis dengan huruf kapital yang berbeda ukuran
+          <li style="font-size:14px"> Properti <b>font-variant</b> menerima tiga buah nilai, yaitu <em>small-caps</em>, <em>normal</em>, dan <em>inherit</em>
+          <li style="font-size:14px">Berikut contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> h1{
+          <li style="font-size:14px; text-indent:80px;"> font-variant: small-caps;
+          <li style="font-size:14px; text-indent:-38px;"> }
+          <li style="font-size:14px"> Perlu diingat juga bahwa sama dengan penggunaan nilai <b>oblique</b> pada <b>font-style</b>, nilai <b>small-caps</b> bergantung kepada dukungan dari font yang digunakan
+
+      section
+        h3 Properti font-weight
+        ul
+          <li style="font-size:14px"> Properti ini dapat diisikan dengan nilai kata kunci khusus seperti <b>normal</b>, <b>bold</b>, <b>bolder</b>, <b>lighter</b>, dan <b>inherit</b>
+          <li style="font-size:14px"> Yang paling sering ditemui ialah penggunaan nilai <b>normal</b> dan <b>bold</b> untuk mengubah teks dari standar menjadi cetak tebal, atau sebaliknya
+          <li style="font-size:14px"> Kita juga dapat mengisikan properti ini dengan nilai angka
+          <li style="font-size:14px"> Nilai-nilai angka ini merepresentasikan tingkat ketebalan teks, mulai dari paling tipis (100) sampai yang paling tebal (900)
+          <li style="font-size:14px">  Nilai angka pada teks <b>normal</b> ialah 400, dan nilai <b>bold</b> ialah 700
+
+      section
+        ul
+          <li style="font-size:14px"> Sebelum menggunakan nilai angka ini, pastikan <em>typeface</em> yang digunakan mendukung ketebalan tersebut, karena jika tidak maka pengisian nilai tidak akan memberikan efek
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> h1{
+          <li style="text-indent:80px"> font-weight: bold;
+          <li style="text-indent:-38px"> }
+        hr
+        ul
+          <li style="text-indent:-50px"> em{
+          <li style="text-indent:80px"> font-weight: 700;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Properti line-height
+        ul
+          <li style="font-size:14px"> Properti ini digunakan untuk mengubah jarak antar baris dari sebuah teks
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> p{
+          <li style="text-indent:80px"> line-height: 24px;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Penulisan Singkat Properti Font
+        ul
+          <li style="font-size:14px"> Seluruh properti <em>font</em> yang diberikan pada bagian-bagian sebelumnya dapat dikombinasikan dan dituliskan dalam hanya satu properti <b>font</b>
+          <li style="font-size:14px"> Jika ingin menyingkat penulisan, kita harus memberikan urutan properti yang tepat, yaitu: <b>font-style</b>, <b>font-variant</b>, <b>font-weight</b>, <b>font-size</b>, <b>line-height</b>, dan <b>font-family</b>
+          <li style="font-size:14px"> Seluruh nilai-nilai yang akan diisikan tersebut harus dipisahkan dengan spasi, kecuali untuk <b>font-size</b> dan <b>line-height</b>. Properti <em>font-size</em> dan <em>line-height</em> dipisahkan dengan slash (/)
+
+      section
+        ul
+          <li style="font-size:14px"> Perlu diingat juga bahwa nilai-nilai dari properti yang diisikan pada penulisan singkat bersifat opsional (boleh tidak diisi), kecuali untuk <b>font-size</b> dan <b>font-family</b>. Karena hal ini pula, yang paling sering dijumpai pada penggunaan penulisan singkat ialah hanya <em>font-size</em> dan <em>font-family</em>
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> p{
+          <li style="text-indent:80px"> font: italic small-caps bold 13px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Properti text-align
+        ul
+          <li style="font-size:14px"> Melakukan pelurusan (align) teks merupakan bagian penting untuk mendapatkan ritme dan alur pembacaan sebuah dokumen
+          <li style="font-size:14px"> Pelurusan teks pada CSS diatur dengan menggunakan properti <b>text-align</b>, yang dapat diisikan dengan lima nilai, yaitu: <em>left</em>, <em>right</em>, <em>center</em>, <em>justify</em>, and <em>inherit</em>
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> p{
+          <li style="text-indent:80px"> text-align: justify;
+          <li style="text-indent:-38px"> }
+
+      section
         h1 Background
 
       section
@@ -829,6 +920,9 @@ html
         hr
         <li style="font-size:14px">Pembuatan radial sendiri menggunakan sintaks yang sama, dengan nama fungsi radial-gradient
         <li style="font-size:14px">div{background:radial-gradient(#FOO,#FFF)} 
+
+      section
+        h2 List
 
       section
         h3 List
@@ -896,9 +990,24 @@ html
         <li style="font-size:14px"> Contoh : ul {list-style:list-style-type list-style-position list-style-image;}
 
 
+        h2 Table
 
+      section
+        h3 Table
+        ul
+          li Mengapa Table sering digunakan?
+          li karena dapat menampilkan informasi baik berupa angka, data gambar atau yanglainnya dengan bentuk yang ringkas dan mudah dibaca
+          li table juga banyak digunakan untuk memperindah tampilan atau sebagai layout tampilan
 
-
+      section
+        ul
+          li 
+          li Tag Pembentuk Table
+          li Untuk membentuk table : < table >...< /table >
+          li Untuk membentuk baris pada table : < tr >...< /tr >
+          li Untuk membentuk kolom pada table : < td >...< /td >
+          li Untuk menuliskan judul kolom pada table : < th >...< /th >
+          li Untuk menuliskan judul table yang terletak di luar table : < caption >...< /caption >
 
 
 
