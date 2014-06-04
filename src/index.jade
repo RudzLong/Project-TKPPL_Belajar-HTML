@@ -765,6 +765,73 @@ html
           <li style="font-size:14px; text-indent:-18px;"> }
 
       section
+        h3 Properti font-variant
+        ul
+          <li style="font-size:14px"> Properti <b>font-variant</b> digunakan untuk memberikan tampilan <b>small caps</b>, yaitu seluruh teks ditulis dengan huruf kapital yang berbeda ukuran
+          <li style="font-size:14px"> Properti <b>font-variant</b> menerima tiga buah nilai, yaitu <em>small-caps</em>, <em>normal</em>, dan <em>inherit</em>
+          <li style="font-size:14px">Berikut contoh kodenya :
+          <li style="font-size:14px; text-indent:-50px;"> h1{
+          <li style="font-size:14px; text-indent:80px;"> font-variant: small-caps;
+          <li style="font-size:14px; text-indent:-38px;"> }
+          <li style="font-size:14px"> Perlu diingat juga bahwa sama dengan penggunaan nilai <b>oblique</b> pada <b>font-style</b>, nilai <b>small-caps</b> bergantung kepada dukungan dari font yang digunakan
+
+      section
+        h3 Properti font-weight
+        ul
+          <li style="font-size:14px"> Properti ini dapat diisikan dengan nilai kata kunci khusus seperti <b>normal</b>, <b>bold</b>, <b>bolder</b>, <b>lighter</b>, dan <b>inherit</b>
+          <li style="font-size:14px"> Yang paling sering ditemui ialah penggunaan nilai <b>normal</b> dan <b>bold</b> untuk mengubah teks dari standar menjadi cetak tebal, atau sebaliknya
+          <li style="font-size:14px"> Kita juga dapat mengisikan properti ini dengan nilai angka
+          <li style="font-size:14px"> Nilai-nilai angka ini merepresentasikan tingkat ketebalan teks, mulai dari paling tipis (100) sampai yang paling tebal (900)
+          <li style="font-size:14px">  Nilai angka pada teks <b>normal</b> ialah 400, dan nilai <b>bold</b> ialah 700
+
+      section
+        ul
+          <li style="font-size:14px"> Sebelum menggunakan nilai angka ini, pastikan <em>typeface</em> yang digunakan mendukung ketebalan tersebut, karena jika tidak maka pengisian nilai tidak akan memberikan efek
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> h1{
+          <li style="text-indent:80px"> font-weight: bold;
+          <li style="text-indent:-38px"> }
+        hr
+        ul
+          <li style="text-indent:-50px"> em{
+          <li style="text-indent:80px"> font-weight: 700;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Properti line-height
+        ul
+          <li style="font-size:14px"> Properti ini digunakan untuk mengubah jarak antar baris dari sebuah teks
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> p{
+          <li style="text-indent:80px"> line-height: 24px;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Penulisan Singkat Properti Font
+        ul
+          <li style="font-size:14px"> Seluruh properti <em>font</em> yang diberikan pada bagian-bagian sebelumnya dapat dikombinasikan dan dituliskan dalam hanya satu properti <b>font</b>
+          <li style="font-size:14px"> Jika ingin menyingkat penulisan, kita harus memberikan urutan properti yang tepat, yaitu: <b>font-style</b>, <b>font-variant</b>, <b>font-weight</b>, <b>font-size</b>, <b>line-height</b>, dan <b>font-family</b>
+          <li style="font-size:14px"> Seluruh nilai-nilai yang akan diisikan tersebut harus dipisahkan dengan spasi, kecuali untuk <b>font-size</b> dan <b>line-height</b>. Properti <em>font-size</em> dan <em>line-height</em> dipisahkan dengan slash (/)
+
+      section
+        ul
+          <li style="font-size:14px"> Perlu diingat juga bahwa nilai-nilai dari properti yang diisikan pada penulisan singkat bersifat opsional (boleh tidak diisi), kecuali untuk <b>font-size</b> dan <b>font-family</b>. Karena hal ini pula, yang paling sering dijumpai pada penggunaan penulisan singkat ialah hanya <em>font-size</em> dan <em>font-family</em>
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> p{
+          <li style="text-indent:80px"> font: italic small-caps bold 13px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Properti text-align
+        ul
+          <li style="font-size:14px"> Melakukan pelurusan (align) teks merupakan bagian penting untuk mendapatkan ritme dan alur pembacaan sebuah dokumen
+          <li style="font-size:14px"> Pelurusan teks pada CSS diatur dengan menggunakan properti <b>text-align</b>, yang dapat diisikan dengan lima nilai, yaitu: <em>left</em>, <em>right</em>, <em>center</em>, <em>justify</em>, and <em>inherit</em>
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-50px"> p{
+          <li style="text-indent:80px"> text-align: justify;
+          <li style="text-indent:-38px"> }
+
+      section
         h1 Background
 
       section
@@ -831,6 +898,9 @@ html
         <li style="font-size:14px">div{background:radial-gradient(#FOO,#FFF)} 
 
       section
+        h2 List
+
+      section
         h3 List
         hr
         <li style="font-size:14px">List adalah tag yang menyusun teks ke dalam bentuk suatu daftar
@@ -856,6 +926,9 @@ html
         <li style="font-size:14px">Pada Properti list-style-type juga dapat mengisikan nilai none untuk mengosongkan penanda daftar
         <li style="font-size:14px">Selain itu,kita juga dapat menggunakan gambar yang kita inginkan sebagai penanda dari list, Melalui properti list-style-image
         <li style="font-size:14px">Dengan memanfaatkan nilai none pada list-style-type dan pseudo-selector:before,kita juga dapat membuat penanda daftar dengan karakter apapun yang kita inginkan.
+
+      section
+        h2 Table
 
       section
         h3 Table
