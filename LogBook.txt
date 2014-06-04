@@ -220,3 +220,24 @@ Daily Scrum
 	1. Semalam	: push lanjutan slide " Pemformatan dokumen teks"
 	2. Hari ini	: Membuat Slide table
 	3. Masalah	: -
+
+4/6/2014 (Rabu)
+	Andra
+	1. Semalam	: Membuat Slide Font-Family,Font-size dan Font-Style
+	2. Hari ini	: Lanjutan pembuatan properti
+	3. Masalah	: -
+
+	Fajar
+	1. Semalam	: Membuat Slide Pengantar List
+	2. Hari ini	: Membuat Slide Pengantar List ( Ordered List s/d Penggabungan Properti List )
+	3. Masalah	: -
+
+	Fredico
+	1. Semalam	: Menyambung Slide Tipografi
+	2. Hari ini	: Menyambung bahan untuk slide tipografi lagi
+	3. Masalah	: -
+
+	Rudy Tantono
+	1. Semalam	: Membuat Slide table
+	2. Hari ini	: Melanjutkan bahan table
+	3. Masalah	: -
