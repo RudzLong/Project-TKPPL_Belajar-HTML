@@ -52,6 +52,11 @@ Scrummaster: Fajar Julianto (12 111 1087)
 
 
 Sprint 4:
+05/6/2014 - 07/6/2014
+Scrummaster: Andra (12 111 1036)
+
+	List sebagai Menu
+	Form
 
 Progress Harian
 ---------------
@@ -239,4 +244,25 @@ Daily Scrum
 	Rudy Tantono
 	1. Semalam	: Membuat Slide table
 	2. Hari ini	: Melanjutkan bahan table
+	3. Masalah	: -
+
+5/6/2014 (Kamis)
+	Andra
+	1. Semalam	: Lanjutan pembuatan properti
+	2. Hari ini	: Membuat Slide Lanjutan Properti 2
+	3. Masalah	: -
+
+	Fajar
+	1. Semalam	: Membuat Slide Pengantar List ( Ordered List s/d Penggabungan Properti List )
+	2. Hari ini	: Lanjutan pembuatan slide List
+	3. Masalah	: -
+
+	Fredico
+	1. Semalam	: Menyambung bahan untuk slide tipografi lagi
+	2. Hari ini	: Menambah slide Multimedia Image
+	3. Masalah	: -
+
+	Rudy Tantono
+	1. Semalam	: Melanjutkan bahan table
+	2. Hari ini	: Melanjutkan lanjutan slide "table"
 	3. Masalah	: -
