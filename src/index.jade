@@ -544,7 +544,7 @@ html
           ul
             <li style="font-size:14px">Salah satu prinsip mendasar dalam menyusun elemen-elemen HTML ialah Box Model. Apa itu box model? Konsep box model pada dasarnya merupakan konsep yang menyatakan bahwa elemen-elemen yang ada di dalam HTML adalah berbentuk kotak. Ukuran setiap elemen itu sendiri dipengaruhi oleh isi dari elemen, margin, padding, dan border dari elemen tersebut.
             li Ini adalah tampilan dari Box Model
-            <div style="background:#CDE; border:25px solid #ABC; height:150px; margin:25px; padding:25px; width:500px;"></div>
+            <div style="background:#CDE; border:25px solid #ABC; height:150px; margin:25px; margin-left:400px; padding:25px; width:500px;"></div>
             <li style="font-size:14px">Bagaimana cara membuatnya? Mari kita lihat properti-properti CSS yang memengaruhi Box Model
 
       section
@@ -624,7 +624,7 @@ html
         hr
         ul
           <li style="font-size:14px">Meskipun seluruh elemen pada dasarnya berbentuk kotak, CSS memungkinkan kita untuk menampilkan elemen dengan sedikit variasi, yaitu memberikan sudut bulat kepada elemen.
-          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
+          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-left:400px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
           <li style="font-size:14px">Kita dapat menggunakan properti border-radius untuk membuat efek sudut bulat seperti gambar diatas, dengan menggunakan kode berikut :
           <li style="font-size:14px; text-indent:-50px;"> div{
           <li style="font-size:14px; text-indent:80px;"> border-radius: 15px;
@@ -898,6 +898,27 @@ html
           <li style="text-indent:-50px"> h2{
           <li style="text-indent:80px"> text-shadow: 4px 4px 2px rgba(150, 150, 150, 1), 1em 1em 2em rgba(125, 255, 255, 1);
           <li style="text-indent:-38px"> }
+
+      section
+        h3 Properti text-transform
+        ul
+          <li style="font-size:14px"> Properti <b>text-transform</b> sama dengan properti <b>font-variant</b>, dalam hal properti ini memberikan perubahan huruf (kapital ke standar atau sebaliknya) terhadap teks yang ditampilkan
+          <li style="font-size:14px"> Nilai yang mungkin diisikan dengan properti ini yaitu : <b>none</b>, <b>capitalize</b>, <b>uppercase</b>, <b>lowercase</b> dan <b>inherit</b>
+          <li style="font-size:14px"> Nilai <b>uppercase</b> dan <b>lowercase</b> sudah jelas kegunaannya, sementara nilai <b>capitalize</b> digunakan agar seluruh awal kata dari teks dibuat menjadi huruf kapital
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-110px"> a.sponsor{
+          <li style="text-indent:80px"> text-transform: capitalize;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Properti letter-spacing & word-spacing
+        ul
+          li Properti <b>letter-spacing</b> dan <b>word-spacing</b> digunakan untuk mengatur jarak antar huruf dan jarak antar kata
+          li Berikut contoh kodenya :
+          <li style="text-indent:-80px"> p{
+          <li style="text-indent:80px"> letter-spacing: 0.7em;
+          <li style="text-indent:80px"> word-spacing: 0.9em;
+          <li style="text-indent:-58px"> }
 
       section
         h1 Background
