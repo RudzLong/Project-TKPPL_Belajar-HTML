@@ -92,7 +92,6 @@ html
             <li style="font-size:14px"> Contoh  : kita memberikan elemen paragraph (<"p">...<"/p"> pada sebuah konten yang berarti konten tersebut akan dijadikan sebuah paragraf. CSS kemudian digunakan untuk menentukan ukuran teks,warna teks,spasi, dan berbagai gaya penampilan dari paragraph (konten) tersebut.
 
       section
-
         h3 Struktur Dokumen HTML
           ul <b> Elemen HTML</b>
             p
@@ -1081,6 +1080,7 @@ html
       section
         h2 Table
         ul
+          li 
           li Mengapa Table sering digunakan?
           li karena dapat menampilkan informasi baik berupa angka, data gambar atau yanglainnya dengan bentuk yang ringkas dan mudah dibaca
           li table juga banyak digunakan untuk memperindah tampilan atau sebagai layout tampilan
@@ -1096,7 +1096,7 @@ html
           li Untuk menuliskan judul table yang terletak di luar table : < caption >...< /caption >
 
       section
-        img(src='images/contoh1table.png')
+        img(src='images/table/contoh1table.png')
 
       section
         ul
@@ -1114,7 +1114,7 @@ html
           li cellspacing -> Menentukan jarak (jumlah) spasi antar sel
 
       section
-        img(src='images/contohatributetag.png')
+        img(src='images/table/contohatributetag.png')
 
       section
         ul
@@ -1136,9 +1136,93 @@ html
           li <red>width</red> -> Menentukan lebar tabel
 
       section
-        img(src='images/contoh2table.png')
+        img(src='images/table/contoh2table.png')
         <br>
-        img(src='images/contoh3table.png')
+        img(src='images/table/contoh3table.png')
+
+      section
+        h2 Atribut tag < caption > <br>
+        p * Tag < caption >...< /caption >membentuk judul table yang terletak di bagian luar sebuah table <br>* Tag < caption > harus terletak di urutan pertama setelah tag < table ><br>
+        img(src='images/table/contohcaption.png')
+
+      section
+        h2 Atribut pada tag < TR >
+        ul
+          li  
+          li Tag < tr >...< /tr > mendefinisikan baris table<br>
+          li Didalam tag <tr> hanya boleh berisi sejumlah tag < th > dan < td >
+          li Atribut yang terdapat tag < tr > adalah
+          li <red>align</red> -> Menentukan perataan horizontal isi data baris
+          li Nilai yang terdapat pada align : <red>center</red>, <red>justify</red>, <red>left</red> (default), <red>right</red>
+          li <red>bgcolor</red> -> Menentukan warna latar belakang baris
+          li <red>bordercolor</red> -> Menentukan warna bingkai baris
+          li <red>bordercolordark</red> -> Menentukan warna "bayangan" baris
+          li <red>bordercolorlight</red> -> Menentukan warna depan baris
+          li <red>height</red> -> Menentukan tinggi baris
+          li <red>nowrap</red> -> Menentukan teks agar tetap satu baris
+          li <red>valign</red> -> Menentukan perataan vertikal isi data pada baris
+          li Nilai yang terdapat pada valign : <red>baseline</red>, <red>bottom</red>, <red>middle</red> (default), <red>top</red>
+
+      section
+        img(src='images/table/contoh1tr.png')
+        img(src='images/table/contoh2tr.png')
+
+      section
+        h2 Atribut pada tag < TD >
+        ul
+          li  
+          li Tag < td >...< /td > mendefinisikan isi tiap sel<br>
+          li Isi dapat berupa teks, gambar maupun elemen lainnya
+          li Atribut yang terdapat tag < td > adalah
+          li <red>align</red> -> Menentukan perataan horizontal teks dalam sel
+          li Nilai yang terdapat pada align : <red>center</red>, <red>justify</red>, <red>left</red> (default), <red>right</red>
+          li <red>background</red> -> Menentukan gambar latar belakang sel
+          li <red>bgcolor</red> -> Menentukan warna latar belakang sel
+          li <red>bordercolor</red> -> Menentukan warna bingkai sel
+          li <red>bordercolordark</red> -> Menentukan warna "bayangan" sel
+          li <red>bordercolorlight</red> -> Menentukan warna depan sel
+          li <red>colspan</red> -> Menentukan jumlah kolom yang digabung
+          li <red>height</red> -> Menentukan tinggi sel
+          li <red>nowrap</red> -> Menentukan teks agar tetap satu baris
+          li <red>rowspan</red> -> Menenukan jumlah baris yang digabung
+          li <red>valign</red> -> Menentukan perataan vertikal teks dalam sel
+          li Nilai yang terdapat pada valign : <red>baseline</red>, <red>bottom</red>, <red>middle</red> (default), <red>top</red>
+          li <red>width</red> -> Menentukan lebar sel
+
+      section
+        h2 Atribut pada tag < TH >
+        ul
+          li  
+          li Tag < th >...< /th > mendefinisikan judul tiap kolom atau baris<br>
+          li Atribut yang terdapat tag < th > adalah
+          li <red>align</red> -> Menentukan perataan horizontal teks dalam sel
+          li Nilai yang terdapat pada align : <red>center</red>, <red>justify</red>, <red>left</red> (default), <red>right</red>
+          li <red>background</red> -> Menentukan gambar latar belakang sel
+          li <red>bgcolor</red> -> Menentukan warna latar belakang sel
+          li <red>bordercolor</red> -> Menentukan warna bingkai sel
+          li <red>bordercolordark</red> -> Menentukan warna "bayangan" sel
+          li <red>bordercolorlight</red> -> Menentukan warna depan sel
+          li <red>colspan</red> -> Menentukan jumlah kolom yang digabung
+          li <red>height</red> -> Menentukan tinggi sel
+          li <red>nowrap</red> -> Menentukan teks agar tetap satu baris
+          li <red>rowspan</red> -> Menenukan jumlah baris yang digabung
+          li <red>valign</red> -> Menentukan perataan vertikal teks dalam sel
+          li Nilai yang terdapat pada valign : <red>baseline</red>, <red>bottom</red>, <red>middle</red> (default), <red>top</red>
+          li <red>width</red> -> Menentukan lebar sel
+
+      section
+        img(src='images/table/contoh1tdth.png')
+        img(src='images/table/contoh2tdth.png')
+
+      section
+        h2 Nested Table
+        ul
+          li 
+          li Nested table terjadi jika pada suatu cell di dalam suatu table terdapat table yang lain
+          li Dengan kata lain nested table adalah table di dalam table
+
+      section
+        img(src='images/table/contohnested.png')
 
       section
         h1 Multimedia
@@ -1165,6 +1249,7 @@ html
             li <font color="red">hspace</font> : Menentukan jarak spasi horizontal antara objek di sekitarnya
             li <font color="red">vpsace</font> : Menentukan jarak spasi vertikal antara objek di sekitarnya
             li <font color="red">width</font> : Menentukan lebar dari gambar dalam pixel
+
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
