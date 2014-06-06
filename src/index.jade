@@ -1039,7 +1039,7 @@ html
         <li style="font-size:14px"> Nilai-nilai yang dapat digunakan untuk mengubah penanda pada ordered list yaitu : decimal, lower-roman,lower-greek,upper-alpha,upper-latin,georgian,decimal-leading-zero,upper-roman,lower-alpha,lower-latin, dan armenian
 
       section
-        h3 Posisi Teks list ( Ordered * Unordered)
+        h3 Posisi Teks list ( Ordered & Unordered)
         hr
         <li style="font-size:14px">Ketika menuliskan sebuah daftar, tidak jarang kita menemukan daftar panjang, yang diikuti dengan deskripsi mengenai daftar tersebut
         <li style="font-size:14px"> Kita dapat mengubah posisi teks ini dengan menggunakan properti list-style-position
@@ -1266,7 +1266,32 @@ html
         <li style="font-size:14px">Pembuata tombol dilakukan sama persisi seperti pada tombol pengiriman, dengan perbedaan nilai pada atribut type, yang diisikan dengan reset pada tombol penghapusan ini
         <li style="font-size:14px">< Input type="reset" name="reset" value="kosongkan Form">
 
-        h2 Form
+      section
+        h3 Organisasi Elemen Form
+        <li style="font-size:14px">Mengetahui bagaimana membuat elemen-elemen masukkan pada form masih merupakan langkah awal dalam pembuatan form HTML. elemen-elemen masukan form jika ditampilkan tanpa informasi tambahan tidaklah berguna, karena pengguna tidak dapat mengetahui data apa yang harus diisikan ke dalam elemen-elemen tersebut.
+        <li style="font-size:14px">Untuk memberikan informasi tambahan kepada pengguna, HTML juga menyediakan elemen-elemen yang dapat digunakan sebagai penanda dari elemen masukan form.Adapun elemen-elemen yang dapat digunakan untuk tujuan yaitu : label, fieldset, dan legend.
+
+      section
+        h3 Label
+        <li style="font-size:14px">Elemen label memberikan fasilitas untuk menambahkan teks pada elemen masukan form. Elemen ini diisikan dengan deskripsi dari elemen masukan yang ingin ditambahkan, dan harus memiliki atribut for. Atribut for pada elemen label berisikan nilai yang sama dengan atribut id pada elemen masukan form. Pengisian nilai yang sama akan mengikatkan elemen label dengan elemen masukan, sehingga pengguna dapat langsung mengisikan nilai dengan melakukan klik pada teks yang dihasilkan oleh elemen label.
+        <li style="font-size:14px"><label for="username">Username</label>
+        <li style="font-size:14px"><input type="text" name="username" id="username">
+        <li style="font-size:14px">di mana isi dari atribut for pada label adalah sama dengan isi atribut id pada elemen input. Lihat hasil eksekusi kode pada halaman berikut dan coba klik teks “Username” untuk melihat efeknya. Coba juga untuk menggantikan isi atribut for atau id untuk melihat hasilnya.
+
+      section
+        h3 Fieldset
+        hr
+        <li style="font-size:14px">Elemen fieldset merupakan elemen yang digunakan untuk membungkus beberapa elemen masukan form, untuk menandakan bahwa elemen-elemen tersebut merupakan elemen masukan yang berada pada satu grup yang sama, atau saling berhubungan.
+        <li style="font-size:14px">Secara standar, elemen fieldset akan memberikan border di sekitar grup elemen-elemen di dalamnya, yang tentunya dapat diubah dengan menggunakan CSS. Berikut adalah contoh penggunaan fieldset:
+        hr
+
+        p <fieldset>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password">
+          </fieldset>
+
 
       section
         h3 Form
