@@ -1318,6 +1318,22 @@ html
         ul
           li Terdapat banyak elemen-elemen masukan pada form, yang dapat digunakan oleh pengguna untuk mengisikan data dengan yang berbeda-beda jenisnya. Bagian ini akan membahas tiap-tiap elemen masukan form, beserta dengan cara pembuatannya
 
+      section
+        h3 Tombol pada Form
+        <li style="font-size:14px">Setelah pengguna mengisikan data-data yang diminta oleh dokumen web, tentu saja pengguna harus mengirimkan data tersebut ke server. Pengiriman data dapat dilakukan pengguna melalui tombol khusus yang disediakan oleh HTML
+
+      section
+        h3 Tombol Pengiriman
+        <li style="font-size:14px">Pembuatan tombol pengiriman juga dilakukan dengan menggunakan elemen input, yang atribut typenya diisikan dengan nilai submit, seperti berikut :
+        <li style="font-size:14px">< input type ="submit" name ="submit" value ="masukkan form" >
+        <li style="font-size:14px">Perhatikan berbeda dengan elemen-elemen input sebelumnya, nilai dari atribut value diproses menjadi teks dari tombol yang ditampilkan ke pengguna. Hal ini menyebabkan kita tidak lagi perlu menambahkan teks setelah elemen form, seperti pada radiobutton ataupun checkbox
+
+      section
+        h3 Tombol Penghapus Input
+        <li style="font-size:14px">Ketika sedang mengisikan form, seringkali pengguna menyadari bahwa data-data yang diisikannya mayoritas adalah data yang salah. Pada saat ini biasanya pengguna akan menghapus seluruh isi dari form,satu per satu. Untungnya HTML telah memberikan fitur untuk menghapus seluruh isi form sekaligus, melalui tombol penghapus input
+        <li style="font-size:14px">Pembuata tombol dilakukan sama persisi seperti pada tombol pengiriman, dengan perbedaan nilai pada atribut type, yang diisikan dengan reset pada tombol penghapusan ini
+        <li style="font-size:14px">< Input type="reset" name="reset" value="kosongkan Form">
+
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
