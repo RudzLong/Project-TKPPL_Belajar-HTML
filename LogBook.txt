@@ -274,7 +274,7 @@ Daily Scrum
 
 	Fajar
 	1. Semalam	: Lanjutan pembuatan slide List
-	2. Hari ini	: Menambah slide Tombol-Tombol pada Form
+	2. Hari ini	: Menambah slide Tombol pada Form
 	3. Masalah	: -
 
 	Fredico
