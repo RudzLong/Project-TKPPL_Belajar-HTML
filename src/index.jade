@@ -623,7 +623,7 @@ html
         hr
         ul
           <li style="font-size:14px">Meskipun seluruh elemen pada dasarnya berbentuk kotak, CSS memungkinkan kita untuk menampilkan elemen dengan sedikit variasi, yaitu memberikan sudut bulat kepada elemen.
-          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-left:400px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
+          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-left:300px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
           <li style="font-size:14px">Kita dapat menggunakan properti border-radius untuk membuat efek sudut bulat seperti gambar diatas, dengan menggunakan kode berikut :
           <li style="font-size:14px; text-indent:-50px;"> div{
           <li style="font-size:14px; text-indent:80px;"> border-radius: 15px;
@@ -1249,6 +1249,33 @@ html
             li <font color="red">hspace</font> : Menentukan jarak spasi horizontal antara objek di sekitarnya
             li <font color="red">vpsace</font> : Menentukan jarak spasi vertikal antara objek di sekitarnya
             li <font color="red">width</font> : Menentukan lebar dari gambar dalam pixel
+
+      section
+        h2 Form
+
+      section
+        h3 Form
+        ul
+          li Sebuah form merupakan bagian dari dokumen web yang dapat diisikan oleh pengguna, untuk memeberikan informasi tertentu dari pengguna kepada website. Sebuah form sangat penting dalam sebuah aplikasi web, terutama aplikasi web dinamis, karena form merupakan satu-satunya sarana bagi pengembang website untuk mendapatkan informasi dari pengguna
+
+          li Mengetahui bagaimana membuat form pada HTML dengan benar penting untuk memastikan tidak terdapat kesalah pahaman pengguna dalam menggunakan form yang disediakan. Bagian ini akan menjelaskan bagiamana membuat form dengan HTML, elemen-elemen form yang disediakan, serta bagaimana elemen-elemen tersebut digunakan. Pemrosesan form secara dinamis tidak akan dibahas, dan properti CSS untuk memperindah tampilan form akan dibahas pada bagian berikutnya
+
+      section
+        h3 Inisialisasi Form
+        ul
+          li Form pada HTML dibuat dengan menggunakan elemen form. Elemen form harus membungkus seluruh elemen-elemen masukan form lain untuk memastikan masukan informasi pengguna dapat dibaca oleh aplikasi web. Pembungkusan elemen-elemen masukan dilakukan sama seperti kita membungkus elemen-elemen lain pada div :
+          li < form action="#" method="post">
+          li    ....
+          li < /form>
+          li
+          li Seperti yang dapat dilihat pada kode di atas, terdapat dua atribut yang wajib dimiliki oleh elemen form. Atribut pertama ialah action, yang berfungsi untuk memberitahukan browser alamat pengiriman dari data-data yang diisikan pengguna di dalam form. Idealnya parameter ini diisikan dengan sebuah URL pada server yang melakukan pemrosesan data
+
+          li Atribut kedua yang wajib diisikan ialah atribut method. Atribut ini memberitahukan browser bagaimana data akan dikirimkan kepada server yang alamatnya diisikan pada action. Terdapat dua nilai yang dapat diisikan pada bagian ini, yaitu get dan post. Keuda nilai ini sendiri merupakan protokol HTTP yang digunakan untuk pengiriman data. Untuk lebih jelasnya mengenai perbedaan get dan post
+
+      section
+        h3 Masukan Form
+        ul
+          li Terdapat banyak elemen-elemen masukan pada form, yang dapat digunakan oleh pengguna untuk mengisikan data dengan yang berbeda-beda jenisnya. Bagian ini akan membahas tiap-tiap elemen masukan form, beserta dengan cara pembuatannya
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
