@@ -92,7 +92,6 @@ html
             <li style="font-size:14px"> Contoh  : kita memberikan elemen paragraph (<"p">...<"/p"> pada sebuah konten yang berarti konten tersebut akan dijadikan sebuah paragraf. CSS kemudian digunakan untuk menentukan ukuran teks,warna teks,spasi, dan berbagai gaya penampilan dari paragraph (konten) tersebut.
 
       section
-
         h3 Struktur Dokumen HTML
           ul <b> Elemen HTML</b>
             p
@@ -544,7 +543,7 @@ html
           ul
             <li style="font-size:14px">Salah satu prinsip mendasar dalam menyusun elemen-elemen HTML ialah Box Model. Apa itu box model? Konsep box model pada dasarnya merupakan konsep yang menyatakan bahwa elemen-elemen yang ada di dalam HTML adalah berbentuk kotak. Ukuran setiap elemen itu sendiri dipengaruhi oleh isi dari elemen, margin, padding, dan border dari elemen tersebut.
             li Ini adalah tampilan dari Box Model
-            <div style="background:#CDE; border:25px solid #ABC; height:150px; margin:25px; padding:25px; width:500px;"></div>
+            <div style="background:#CDE; border:25px solid #ABC; height:150px; margin:25px; margin-left:400px; padding:25px; width:500px;"></div>
             <li style="font-size:14px">Bagaimana cara membuatnya? Mari kita lihat properti-properti CSS yang memengaruhi Box Model
 
       section
@@ -624,7 +623,7 @@ html
         hr
         ul
           <li style="font-size:14px">Meskipun seluruh elemen pada dasarnya berbentuk kotak, CSS memungkinkan kita untuk menampilkan elemen dengan sedikit variasi, yaitu memberikan sudut bulat kepada elemen.
-          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
+          <div style="background:#CDE; border:3px solid red; height:150px; margin:25px; margin-left:300px; margin-top: 10px; padding:25px; width:500px; border-radius: 20px;"></div>
           <li style="font-size:14px">Kita dapat menggunakan properti border-radius untuk membuat efek sudut bulat seperti gambar diatas, dengan menggunakan kode berikut :
           <li style="font-size:14px; text-indent:-50px;"> div{
           <li style="font-size:14px; text-indent:80px;"> border-radius: 15px;
@@ -900,6 +899,27 @@ html
           <li style="text-indent:-38px"> }
 
       section
+        h3 Properti text-transform
+        ul
+          <li style="font-size:14px"> Properti <b>text-transform</b> sama dengan properti <b>font-variant</b>, dalam hal properti ini memberikan perubahan huruf (kapital ke standar atau sebaliknya) terhadap teks yang ditampilkan
+          <li style="font-size:14px"> Nilai yang mungkin diisikan dengan properti ini yaitu : <b>none</b>, <b>capitalize</b>, <b>uppercase</b>, <b>lowercase</b> dan <b>inherit</b>
+          <li style="font-size:14px"> Nilai <b>uppercase</b> dan <b>lowercase</b> sudah jelas kegunaannya, sementara nilai <b>capitalize</b> digunakan agar seluruh awal kata dari teks dibuat menjadi huruf kapital
+          <li style="font-size:14px"> Berikut contoh kodenya :
+          <li style="text-indent:-110px"> a.sponsor{
+          <li style="text-indent:80px"> text-transform: capitalize;
+          <li style="text-indent:-38px"> }
+
+      section
+        h3 Properti letter-spacing & word-spacing
+        ul
+          li Properti <b>letter-spacing</b> dan <b>word-spacing</b> digunakan untuk mengatur jarak antar huruf dan jarak antar kata
+          li Berikut contoh kodenya :
+          <li style="text-indent:-80px"> p{
+          <li style="text-indent:80px"> letter-spacing: 0.7em;
+          <li style="text-indent:80px"> word-spacing: 0.9em;
+          <li style="text-indent:-58px"> }
+
+      section
         h1 Background
 
       section
@@ -1060,6 +1080,7 @@ html
       section
         h2 Table
         ul
+          li 
           li Mengapa Table sering digunakan?
           li karena dapat menampilkan informasi baik berupa angka, data gambar atau yanglainnya dengan bentuk yang ringkas dan mudah dibaca
           li table juga banyak digunakan untuk memperindah tampilan atau sebagai layout tampilan
@@ -1075,18 +1096,133 @@ html
           li Untuk menuliskan judul table yang terletak di luar table : < caption >...< /caption >
 
       section
+        img(src='images/table/contoh1table.png')
+
+      section
         ul
           li 
           li Atribut Tag Table :
-          li align
-          li background
-          li bgcolor
-          li border
-          li bordercolor
-          li bordercolordark
-          li bordercolorlight
-          li cellpadding
-          li cellspacing
+          li align -> Menentukan Posisi horizontal tabel
+          li nilai dari align : center, left(default), right
+          li background -> Menentukan gambar latar belakang tabel
+          li bgcolor -> Menentukan warna latar belakang tabel
+          li border -> Menentukan tebal bingkai tabel
+          li bordercolor -> Menentukan warna bingkai tabel
+          li bordercolordark -> Menentukan warna "bayangan" bingkai tabel
+          li bordercolorlight -> Menentukan warna depan bingkai tabel
+          li cellpadding -> Menentukan jarak isi sel dengan bingkai
+          li cellspacing -> Menentukan jarak (jumlah) spasi antar sel
+
+      section
+        img(src='images/table/contohatributetag.png')
+
+      section
+        ul
+          li 
+          li <red>frame</red> -> Mengatur tampilan bingkai (frame) di sekitar tabel
+          li Nilai-nilai dari frame :
+          li - above -> menampilkan bingkai atas
+          li - below -> menampilkan bingkai bawah
+          li - border -> menampilkan semua bingkai
+          li - box -> menampilkan semua bingkai
+          li - hsides -> menampilkan bingkai pada sisi horizontal
+          li - lhs -> menampilkan bingkai pada sisi kiri tabel
+          li - rhs -> menampilkan bingkai pada sisi kanan tabel
+          li - void -> tidak ada bingkai
+          li - vsides -> menampilkan bingkai pada sisi vertikal<br>
+          li <red>height</red> -> Menentukan tinggi tabel
+          li <red>rules</red> -> Menentukan apakah garis pemisah horizontal maupun vertikal ditampilkan atau tidak
+          li <red>summary</red> -> Memberi keterangan singkat mengenai struktur dan kegunaan tabel
+          li <red>width</red> -> Menentukan lebar tabel
+
+      section
+        img(src='images/table/contoh2table.png')
+        <br>
+        img(src='images/table/contoh3table.png')
+
+      section
+        h2 Atribut tag < caption > <br>
+        p * Tag < caption >...< /caption >membentuk judul table yang terletak di bagian luar sebuah table <br>* Tag < caption > harus terletak di urutan pertama setelah tag < table ><br>
+        img(src='images/table/contohcaption.png')
+
+      section
+        h2 Atribut pada tag < TR >
+        ul
+          li  
+          li Tag < tr >...< /tr > mendefinisikan baris table<br>
+          li Didalam tag <tr> hanya boleh berisi sejumlah tag < th > dan < td >
+          li Atribut yang terdapat tag < tr > adalah
+          li <red>align</red> -> Menentukan perataan horizontal isi data baris
+          li Nilai yang terdapat pada align : <red>center</red>, <red>justify</red>, <red>left</red> (default), <red>right</red>
+          li <red>bgcolor</red> -> Menentukan warna latar belakang baris
+          li <red>bordercolor</red> -> Menentukan warna bingkai baris
+          li <red>bordercolordark</red> -> Menentukan warna "bayangan" baris
+          li <red>bordercolorlight</red> -> Menentukan warna depan baris
+          li <red>height</red> -> Menentukan tinggi baris
+          li <red>nowrap</red> -> Menentukan teks agar tetap satu baris
+          li <red>valign</red> -> Menentukan perataan vertikal isi data pada baris
+          li Nilai yang terdapat pada valign : <red>baseline</red>, <red>bottom</red>, <red>middle</red> (default), <red>top</red>
+
+      section
+        img(src='images/table/contoh1tr.png')
+        img(src='images/table/contoh2tr.png')
+
+      section
+        h2 Atribut pada tag < TD >
+        ul
+          li  
+          li Tag < td >...< /td > mendefinisikan isi tiap sel<br>
+          li Isi dapat berupa teks, gambar maupun elemen lainnya
+          li Atribut yang terdapat tag < td > adalah
+          li <red>align</red> -> Menentukan perataan horizontal teks dalam sel
+          li Nilai yang terdapat pada align : <red>center</red>, <red>justify</red>, <red>left</red> (default), <red>right</red>
+          li <red>background</red> -> Menentukan gambar latar belakang sel
+          li <red>bgcolor</red> -> Menentukan warna latar belakang sel
+          li <red>bordercolor</red> -> Menentukan warna bingkai sel
+          li <red>bordercolordark</red> -> Menentukan warna "bayangan" sel
+          li <red>bordercolorlight</red> -> Menentukan warna depan sel
+          li <red>colspan</red> -> Menentukan jumlah kolom yang digabung
+          li <red>height</red> -> Menentukan tinggi sel
+          li <red>nowrap</red> -> Menentukan teks agar tetap satu baris
+          li <red>rowspan</red> -> Menenukan jumlah baris yang digabung
+          li <red>valign</red> -> Menentukan perataan vertikal teks dalam sel
+          li Nilai yang terdapat pada valign : <red>baseline</red>, <red>bottom</red>, <red>middle</red> (default), <red>top</red>
+          li <red>width</red> -> Menentukan lebar sel
+
+      section
+        h2 Atribut pada tag < TH >
+        ul
+          li  
+          li Tag < th >...< /th > mendefinisikan judul tiap kolom atau baris<br>
+          li Atribut yang terdapat tag < th > adalah
+          li <red>align</red> -> Menentukan perataan horizontal teks dalam sel
+          li Nilai yang terdapat pada align : <red>center</red>, <red>justify</red>, <red>left</red> (default), <red>right</red>
+          li <red>background</red> -> Menentukan gambar latar belakang sel
+          li <red>bgcolor</red> -> Menentukan warna latar belakang sel
+          li <red>bordercolor</red> -> Menentukan warna bingkai sel
+          li <red>bordercolordark</red> -> Menentukan warna "bayangan" sel
+          li <red>bordercolorlight</red> -> Menentukan warna depan sel
+          li <red>colspan</red> -> Menentukan jumlah kolom yang digabung
+          li <red>height</red> -> Menentukan tinggi sel
+          li <red>nowrap</red> -> Menentukan teks agar tetap satu baris
+          li <red>rowspan</red> -> Menenukan jumlah baris yang digabung
+          li <red>valign</red> -> Menentukan perataan vertikal teks dalam sel
+          li Nilai yang terdapat pada valign : <red>baseline</red>, <red>bottom</red>, <red>middle</red> (default), <red>top</red>
+          li <red>width</red> -> Menentukan lebar sel
+
+      section
+        img(src='images/table/contoh1tdth.png')
+        img(src='images/table/contoh2tdth.png')
+
+      section
+        h2 Nested Table
+        ul
+          li 
+          li Nested table terjadi jika pada suatu cell di dalam suatu table terdapat table yang lain
+          li Dengan kata lain nested table adalah table di dalam table
+
+      section
+        img(src='images/table/contohnested.png')
 
       section
         h1 Multimedia
@@ -1130,6 +1266,31 @@ html
         <li style="font-size:14px">Pembuata tombol dilakukan sama persisi seperti pada tombol pengiriman, dengan perbedaan nilai pada atribut type, yang diisikan dengan reset pada tombol penghapusan ini
         <li style="font-size:14px">< Input type="reset" name="reset" value="kosongkan Form">
 
+        h2 Form
+
+      section
+        h3 Form
+        ul
+          li Sebuah form merupakan bagian dari dokumen web yang dapat diisikan oleh pengguna, untuk memeberikan informasi tertentu dari pengguna kepada website. Sebuah form sangat penting dalam sebuah aplikasi web, terutama aplikasi web dinamis, karena form merupakan satu-satunya sarana bagi pengembang website untuk mendapatkan informasi dari pengguna
+
+          li Mengetahui bagaimana membuat form pada HTML dengan benar penting untuk memastikan tidak terdapat kesalah pahaman pengguna dalam menggunakan form yang disediakan. Bagian ini akan menjelaskan bagiamana membuat form dengan HTML, elemen-elemen form yang disediakan, serta bagaimana elemen-elemen tersebut digunakan. Pemrosesan form secara dinamis tidak akan dibahas, dan properti CSS untuk memperindah tampilan form akan dibahas pada bagian berikutnya
+
+      section
+        h3 Inisialisasi Form
+        ul
+          li Form pada HTML dibuat dengan menggunakan elemen form. Elemen form harus membungkus seluruh elemen-elemen masukan form lain untuk memastikan masukan informasi pengguna dapat dibaca oleh aplikasi web. Pembungkusan elemen-elemen masukan dilakukan sama seperti kita membungkus elemen-elemen lain pada div :
+          li < form action="#" method="post">
+          li    ....
+          li < /form>
+          li
+          li Seperti yang dapat dilihat pada kode di atas, terdapat dua atribut yang wajib dimiliki oleh elemen form. Atribut pertama ialah action, yang berfungsi untuk memberitahukan browser alamat pengiriman dari data-data yang diisikan pengguna di dalam form. Idealnya parameter ini diisikan dengan sebuah URL pada server yang melakukan pemrosesan data
+
+          li Atribut kedua yang wajib diisikan ialah atribut method. Atribut ini memberitahukan browser bagaimana data akan dikirimkan kepada server yang alamatnya diisikan pada action. Terdapat dua nilai yang dapat diisikan pada bagian ini, yaitu get dan post. Keuda nilai ini sendiri merupakan protokol HTTP yang digunakan untuk pengiriman data. Untuk lebih jelasnya mengenai perbedaan get dan post
+
+      section
+        h3 Masukan Form
+        ul
+          li Terdapat banyak elemen-elemen masukan pada form, yang dapat digunakan oleh pengguna untuk mengisikan data dengan yang berbeda-beda jenisnya. Bagian ini akan membahas tiap-tiap elemen masukan form, beserta dengan cara pembuatannya
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
