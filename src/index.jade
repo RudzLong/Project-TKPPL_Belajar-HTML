@@ -1269,6 +1269,125 @@ html
             li <font color="red">width</font> : Menentukan lebar dari gambar dalam pixel
 
       section
+        h3 Form
+        ul
+          li Sebuah form merupakan bagian dari dokumen web yang dapat diisikan oleh pengguna, untuk memeberikan informasi tertentu dari pengguna kepada website. Sebuah form sangat penting dalam sebuah aplikasi web, terutama aplikasi web dinamis, karena form merupakan satu-satunya sarana bagi pengembang website untuk mendapatkan informasi dari pengguna
+
+          li Mengetahui bagaimana membuat form pada HTML dengan benar penting untuk memastikan tidak terdapat kesalah pahaman pengguna dalam menggunakan form yang disediakan. Bagian ini akan menjelaskan bagiamana membuat form dengan HTML, elemen-elemen form yang disediakan, serta bagaimana elemen-elemen tersebut digunakan. Pemrosesan form secara dinamis tidak akan dibahas, dan properti CSS untuk memperindah tampilan form akan dibahas pada bagian berikutnya
+
+      section
+        h3 Inisialisasi Form
+        ul
+          li Form pada HTML dibuat dengan menggunakan elemen form. Elemen form harus membungkus seluruh elemen-elemen masukan form lain untuk memastikan masukan informasi pengguna dapat dibaca oleh aplikasi web. Pembungkusan elemen-elemen masukan dilakukan sama seperti kita membungkus elemen-elemen lain pada div :
+          li < form action="#" method="post">
+          li    ....
+          li < /form>
+          li
+          li Seperti yang dapat dilihat pada kode di atas, terdapat dua atribut yang wajib dimiliki oleh elemen form. Atribut pertama ialah action, yang berfungsi untuk memberitahukan browser alamat pengiriman dari data-data yang diisikan pengguna di dalam form. Idealnya parameter ini diisikan dengan sebuah URL pada server yang melakukan pemrosesan data
+
+          li Atribut kedua yang wajib diisikan ialah atribut method. Atribut ini memberitahukan browser bagaimana data akan dikirimkan kepada server yang alamatnya diisikan pada action. Terdapat dua nilai yang dapat diisikan pada bagian ini, yaitu get dan post. Keuda nilai ini sendiri merupakan protokol HTTP yang digunakan untuk pengiriman data. Untuk lebih jelasnya mengenai perbedaan get dan post
+
+      section
+        h3 Masukan Form
+        ul
+          li Terdapat banyak elemen-elemen masukan pada form, yang dapat digunakan oleh pengguna untuk mengisikan data dengan yang berbeda-beda jenisnya. Bagian ini akan membahas tiap-tiap elemen masukan form, beserta dengan cara pembuatannya
+
+      section
+        h3 Elemen Masukan Teks: TextField dan TextArea
+        ul
+          li Pengisian informasi dalam bentuk teks pada form HTML dapat dilakukan dengan menggunakan dua buah elemen: <b>textarea</b> dan <b>input</b>. <b>textarea</b> digunakan untuk masukan teks yang terdiri dafi beberapa baris, sementara <b>input</b> digunakan untuk masukan teks yang hanya satu baris
+          li Contoh kode penggunaan textarea :
+          <li style="text-indent:-80px"> < textarea>
+          <li style="text-indent:50px"> Contoh isi textarea
+          <li style="text-indent:-80px"> < /textarea>
+        hr
+        ul
+          li <textarea> Contoh isi textarea </textarea>
+
+      section
+        ul
+          li Pengaturan panjang dan lebar dari <b>textarea</b> dapat dilakukan melalui CSS, dengan menggunakan properti <b>height</b> dan <b>width</b>
+        hr
+        ul
+          li Walaupun dapat mengisikan teks dengan banyak sekaligus, <b>textarea</b> tentunya tidak dapat digunakan untuk seluruh kasus pengisian data. Seringkali kita menginginkan pengguna hanya mengisikan data singkat, tanpa isi teks yang banyak
+          li Untuk jenis masukan seperti itu, kita dapat menggunakan elemen input, berikut contohnya :
+          li < input type="text">
+        hr
+        ul
+          li <input type="text">
+
+      section
+        ul
+          li Perhatikan juga bahwa kita menggunakan atribut <b>type</b> pada elemen ini untuk menentukan data-data yang akan diisikan
+          li Terdapat banyak jenis tipe data yang dapat kita isikan, dan browser akan menyesuaikan jenis masukan teks yang ada, sesuai dengan atribut <b>type</b> yang kita tentukan
+          li Nilai-nilai yang dapat diisikan pada atribut <b>type</b> yaitu :
+        ul
+        li color
+        li number
+        li email
+        li range
+        li url
+        li password
+        li text
+        li file
+        li dan masi banyak lainnya
+        ul
+          li Silahkan coba satu per satu jika anda penasaran
+
+      section
+        h3 Elemen Pemilihan: Radio Button, Checkbox, dan Dropdown
+        ul
+          li Selain mengisikan data berupa teks, seringkali kita juga menemukan data berupa pilihan, misalnya jenis kelamin atau hobi
+          li Pengisian data seperti ini biasanya memberikan beberapa pilihan kepada pengguna, dan pengguna dapat memilih satu atau beberapa pilihan yang diberikan
+          li Jika kita ingin memberikan pilihan kepada pengguna, dan memastikan pengguna hanya memilih satu pilihan saja, kita dapat menggunakan <b>radio button</b>
+          li Dalam pembuatan elemen radio button, kita juga wajib menambahkan dua atribut lainnya, yaitu <b>name</b> dan <b>value</b>
+          li Atribut <b>name</b> digunakan untuk memberitahukan browser bahwa radio button dengan atribut <b>name</b> yang sama adalah merupakan kumpulan radio button yang sama, sehingga pengguna tidak boleh memilih dua buah pilihan pada radio button tersebut
+          li Atribut <b>value</b> digunakan untuk menyimpan nilai yang ingin kita kirimkan ke server
+
+      section
+        ul
+          li Contoh kodenya :
+          li < input type="radio" name="sex" value="pria"> Pria < br>
+          li < input type="radio" name="sex" value="wanita"> Wanita
+          li <input type="radio" name="sex" value="pria"> Pria <br> <input type="radio" name="sex" value="wanita"> Wanita
+          li Jika ingin memberikan pengguna kemampuan untuk memilih banyak pilihan sekaligus, kita dapat menggunakan elemen <b>checkbox</b>
+          li Elemen ini sama seperti radio button, dibuat dengan elemen <b>input</b> yang nilai atribut <b>type</b>-nya berisikan <b>checkbox</b>
+          li Contoh kodenya :
+          li < input type="checkbox" name="day" value="senin"> Senin < br>
+          li < input type="checkbox" name="day" value="selasa"> Selasa < br>
+          li < input type="checkbox" name="day" value="rabu"> Rabu
+
+          li <input type="checkbox" name="day" value="senin"> Senin <br> <input type="checkbox" name="day" value="selasa"> Selasa <br> <input type="checkbox" name="day" value="rabu"> Rabu
+
+      section
+        ul
+          li Meskipun dapat memberikan pilihan nilai kepada pengguna, radio button maupun checkbox sangat tidak ideal untuk digunakan pada pilihan yang memiliki nilai yang sangat banyak
+          li Misalnya, pilihan negara yang ditinggali oleh pengguna dari ratusan negara yang ada di dunia yang jika ditampilkan pada radio button akan menyebabkan daftar yang dipaparkan sangat banyak dan sulit dibaca oleh pengguna
+          li Dalam kasus seperti ini lebih baik kita menggunakan <b>dropdown list</b>.
+          li Pembuatan elemen dropdown dilakukan dengan menggabungkan dua elemen, yaitu <b>select</b> dan <b>option</b>
+          li Elemen <b>select</b> membungkus seluruh elemen <b>option</b> yang ada, untuk membentuk sebuah dropdown
+          li Elemen <b>option</b> sendiri merupakan nilai dari dropdown yang diinginkan
+          li Contoh kodenya pada slide selanjutnya :
+
+      section
+        ul
+          li < select name="country">
+          li < option value="indonesia">Indonesia< /option>
+          li < option value="malaysia">Malaysia< /option>
+          li < option value="filipina">Filipina< /option>
+          li < option value="vietnam">Vietnam< /option>
+          li < /select>
+          li <select name="country"><option value="indonesia">Indonesia</option> <option value="malaysia">Malaysia</option> <option value="filipina">Filipina</option> <option value="vietnam">Vietnam</option> </select>
+
+          li < select name="country" multiple>
+          li < option value="indonesia">Indonesia< /option>
+          li < option value="malaysia">Malaysia< /option>
+          li < option value="filipina">Filipina< /option>
+          li < option value="vietnam">Vietnam< /option>
+          li < /select>
+          li <select name="country" multiple> <option value="indonesia">Indonesia</option> <option value="malaysia">Malaysia</option> <option value="filipina">Filipina</option> <option value="vietnam">Vietnam</option> </select>
+
+      section
         h3 Tombol pada Form
         <li style="font-size:14px">Setelah pengguna mengisikan data-data yang diminta oleh dokumen web, tentu saja pengguna harus mengirimkan data tersebut ke server. Pengiriman data dapat dilakukan pengguna melalui tombol khusus yang disediakan oleh HTML
 
@@ -1309,31 +1428,6 @@ html
           <label for="password">Password</label>
           <input type="text" name="password" id="password">
           </fieldset>
-
-
-      section
-        h3 Form
-        ul
-          li Sebuah form merupakan bagian dari dokumen web yang dapat diisikan oleh pengguna, untuk memeberikan informasi tertentu dari pengguna kepada website. Sebuah form sangat penting dalam sebuah aplikasi web, terutama aplikasi web dinamis, karena form merupakan satu-satunya sarana bagi pengembang website untuk mendapatkan informasi dari pengguna
-
-          li Mengetahui bagaimana membuat form pada HTML dengan benar penting untuk memastikan tidak terdapat kesalah pahaman pengguna dalam menggunakan form yang disediakan. Bagian ini akan menjelaskan bagiamana membuat form dengan HTML, elemen-elemen form yang disediakan, serta bagaimana elemen-elemen tersebut digunakan. Pemrosesan form secara dinamis tidak akan dibahas, dan properti CSS untuk memperindah tampilan form akan dibahas pada bagian berikutnya
-
-      section
-        h3 Inisialisasi Form
-        ul
-          li Form pada HTML dibuat dengan menggunakan elemen form. Elemen form harus membungkus seluruh elemen-elemen masukan form lain untuk memastikan masukan informasi pengguna dapat dibaca oleh aplikasi web. Pembungkusan elemen-elemen masukan dilakukan sama seperti kita membungkus elemen-elemen lain pada div :
-          li < form action="#" method="post">
-          li    ....
-          li < /form>
-          li
-          li Seperti yang dapat dilihat pada kode di atas, terdapat dua atribut yang wajib dimiliki oleh elemen form. Atribut pertama ialah action, yang berfungsi untuk memberitahukan browser alamat pengiriman dari data-data yang diisikan pengguna di dalam form. Idealnya parameter ini diisikan dengan sebuah URL pada server yang melakukan pemrosesan data
-
-          li Atribut kedua yang wajib diisikan ialah atribut method. Atribut ini memberitahukan browser bagaimana data akan dikirimkan kepada server yang alamatnya diisikan pada action. Terdapat dua nilai yang dapat diisikan pada bagian ini, yaitu get dan post. Keuda nilai ini sendiri merupakan protokol HTTP yang digunakan untuk pengiriman data. Untuk lebih jelasnya mengenai perbedaan get dan post
-
-      section
-        h3 Masukan Form
-        ul
-          li Terdapat banyak elemen-elemen masukan pada form, yang dapat digunakan oleh pengguna untuk mengisikan data dengan yang berbeda-beda jenisnya. Bagian ini akan membahas tiap-tiap elemen masukan form, beserta dengan cara pembuatannya
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
